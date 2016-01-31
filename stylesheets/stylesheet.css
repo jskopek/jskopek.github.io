@@ -74,6 +74,13 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem; }
+.project-name a {
+  color: #fff;
+}
+.project-name a:hover {
+  text-decoration: none;
+}
+
 
 @media screen and (min-width: 64em) {
   .project-name {
