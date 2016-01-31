@@ -15,3 +15,6 @@ categories: jekyll update
 ![Page 8](http://res.cloudinary.com/jms-personal/image/upload/v1454236715/8_tezjvt.jpg)
 ![Page 9](http://res.cloudinary.com/jms-personal/image/upload/v1454241234/9_rs1uos.jpg)
 ![Page 10](http://res.cloudinary.com/jms-personal/image/upload/v1454237011/10_q9g74s.jpg)
+![Page 11](http://res.cloudinary.com/jms-personal/image/upload/v1454241624/11_hpyhmz.jpg)
+![Page 12](http://res.cloudinary.com/jms-personal/image/upload/v1454241622/12_ifdsn6.jpg)
+![Page 13](http://res.cloudinary.com/jms-personal/image/upload/v1454241622/13_h9wmua.jpg)
