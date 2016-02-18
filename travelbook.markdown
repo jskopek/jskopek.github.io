@@ -18,3 +18,7 @@ categories: jekyll update
 [![Page 11](http://res.cloudinary.com/jms-personal/image/upload/v1454241624/11_hpyhmz.jpg)](http://res.cloudinary.com/jms-personal/image/upload/v1454241624/11_hpyhmz.jpg)
 [![Page 12](http://res.cloudinary.com/jms-personal/image/upload/v1454241622/12_ifdsn6.jpg)](http://res.cloudinary.com/jms-personal/image/upload/v1454241622/12_ifdsn6.jpg)
 [![Page 13](http://res.cloudinary.com/jms-personal/image/upload/v1454241622/13_h9wmua.jpg)](http://res.cloudinary.com/jms-personal/image/upload/v1454241622/13_h9wmua.jpg)
+[![Page 14](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)
+[![Page 15](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)
+[![Page 16](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)
+[![Page 17](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)](http://res.cloudinary.com/jms-personal/image/upload/v1455771874/14_fnjjxl.jpg)
