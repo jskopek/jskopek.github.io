@@ -1,3 +1,26 @@
+/*** CUSTOM ***/
+.image-tile-two img {
+    float: left;
+    width: 50%;
+}
+.image-tile-three img:first-child {
+    float: left;
+    width: 66.66%;
+}
+.image-tile-three img:nth-child(2),
+.image-tile-three img:nth-child(3) {
+    float: right;
+    width: 33.33%;
+}
+.image-tile-fixed-height img {
+    height: 350px;
+    object-fit: cover;
+}
+.image-tile-no-space {
+    margin: 0;
+}
+/*** /CUSTOM ***/
+
 * {
   box-sizing: border-box; }
 
