@@ -20,7 +20,7 @@ Ho Chi Minh City is the most modern of all the cities in Vietnam, which helps wi
 
 ![Artwork](http://res.cloudinary.com/jms-personal/image/upload/v1455855686/DSC02985_yauuln.jpg)
 
-One would be forgiven for thinking that the Vietnamese might dislike Americans, but the wounds of war have healed remarkably quickly and most find themselves welcomed throughout the country. Nevertheless, the scars are still present; bullet holes on monuments, photos of the devastation, and the disfigured victims of Agent Orange who live impoverished lives. I spent my first day wandering around the War Remenants Museum, and the photos I saw still haunt me.
+One would be forgiven for thinking that the Vietnamese might dislike Americans, but the wounds of war have healed remarkably quickly and most find themselves welcomed throughout the country. Nevertheless, the scars are still present; bullet holes on monuments, photos of the devastation, and the disfigured victims of Agent Orange who live impoverished lives. I spent my first day wandering around the War Remnants Museum, and the photos I saw still haunt me.
 
 ![Exploring the Co Chi tunnels](http://res.cloudinary.com/jms-personal/image/upload/v1455775865/HCM_-_33_j4f2ku.jpg)
 
