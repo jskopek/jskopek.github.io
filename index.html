@@ -12,7 +12,7 @@ layout: none
         body {
             padding: 0;
             margin: 0;
-            background: rgb(255, 232, 244);
+            background: rgb(42, 87, 122);
             font-family: 'Lato', sans-serif;
         }
         #background-video {
@@ -66,8 +66,8 @@ layout: none
         </style>
     </head>
     <body>
-        <video id="background-video" autoplay loop  style="background-image:url(assets/eiffel-tower.jpg);" src="assets/eiffel-tower.mp4"></video>
-        <label id="background-video-source" href="#">Samuel Beckett Bridge, Ireland</label>
+        <video id="background-video" autoplay loop  style="background-image:inherit;" src="#"></video>
+        <label id="background-video-source" href="#"></label>
         <div id="content">
             <h1>Jean-Marc Skopek</h1>
             <ul id="menu">
@@ -77,6 +77,21 @@ layout: none
                 <li><a href="https://github.com/jskopek"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
             </ul>
         </div>
+
+        <script type="text/javascript">
+            /* pick a random background from list of options */
+            var backgrounds = [
+                { 'id': 'london-city-center', 'source': 'City Center, London' },
+                { 'id': 'eiffel-tower', 'source': 'Eiffel Tower, Paris' },
+                { 'id': 'samuel-beckett-bridge', 'source': 'Samuel Beckett Bridge, Ireland' },
+            ];
+            var index = Math.floor(Math.random() * backgrounds.length);
+            var background = backgrounds[index];
+            document.getElementById('background-video').style.backgroundImage = "url(/assets/" + background.id + ".jpg)";
+            document.getElementById('background-video').src = "/assets/" + background.id + ".mp4";
+            document.getElementById('background-video-source').textContent = background.source;
+        </script>
+
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     </body>
