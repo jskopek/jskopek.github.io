@@ -13,25 +13,23 @@ layout: none
             padding: 0;
             margin: 0;
             background: rgb(255, 232, 244);
-            /*font-family: 'Eczar', serif;
             font-family: 'Lato', sans-serif;
-            font-family: 'Slabo 27px', serif;
-            font-family: 'Raleway', sans-serif;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-family: 'Lora', serif;*/
-            font-family: 'Montserrat', sans-serif;
         }
         #background-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            /*border: 15px solid #fff;*/
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-        }
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           width: 100%;
+           height: 100%;
+
+           border: 15px solid #fff;
+           box-sizing: border-box;
+
+           background-size: cover;
+           object-fit: cover;
+       }
         #content {
             position: absolute;
             bottom: 50px;
@@ -44,23 +42,32 @@ layout: none
             list-style: none;
             margin: 5px 0;
         }
-        #menu li a {
+        #menu li a i {
+            width: 20px;
+        }
+        label, a {
             color: #fff;
             text-decoration: none;
-            padding: 3px;
+            padding: 3px 8px;
         }
-        #menu li a:hover {
-            background-color: rgb(204, 69, 226);
+        a:hover {
+            background-color: rgba(45, 59, 186, 0.3);
         }
         #content h1 {
             color: #fff;
         }
+        #background-video-source {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            color: #fff;
+            text-decoration: none;
+        }
         </style>
-        <link href="https://fonts.googleapis.com/css?family=Eczar|Lato|Lora|Montserrat|Raleway|Roboto+Condensed|Slabo+27px" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
-        <video id="background-video" src="assets/samuel-beckett-bridge.webm" autoplay loop></video>
+        <video id="background-video" autoplay loop  style="background-image:url(assets/samuel-beckett-bridge.jpg);" src="assets/samuel-beckett-bridge.mp4"></video>
+        <label id="background-video-source" href="#">Samuel Beckett Bridge, Ireland</label>
         <div id="content">
             <h1>Jean-Marc Skopek</h1>
             <ul id="menu">
@@ -70,5 +77,7 @@ layout: none
                 <li><a href="https://github.com/jskopek"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
             </ul>
         </div>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     </body>
 </html>
