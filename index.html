@@ -8,84 +8,9 @@ layout: none
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jean-Marc Skopek</title>
-        <style type="text/css">
-        html, body { height: 100%; }
-        body {
-            padding: 0;
-            margin: 0;
-            background: rgb(42, 87, 122);
-            font-family: 'Lato', sans-serif;
-        }
-        #background-video {
-           position: absolute;
-           top: 0;
-           left: 0;
-           right: 0;
-           bottom: 0;
-           width: 100%;
-           height: 100%;
-
-           border: 15px solid #fff;
-           box-sizing: border-box;
-
-           background-size: cover;
-           object-fit: cover;
-       }
-        #content {
-            position: absolute;
-            bottom: 50px;
-            left: 50px;
-        }
-        #menu {
-            padding: 0;
-        }
-        #menu li {
-            list-style: none;
-            margin: 5px 0;
-        }
-        #menu li a i {
-            width: 16px;
-            margin-right: 5px;
-            text-align: right;
-        }
-        label, a {
-            color: #fff;
-            text-decoration: none;
-            padding: 3px 8px;
-        }
-        a:hover {
-            background-color: rgba(45, 59, 186, 0.3);
-        }
-        h1, h2 {
-            color: #fff;
-            margin: 0.1em 0;
-        }
-        h2 {
-            font-size: 1.1em;
-            font-weight: normal;
-        }
-        h2 a {
-            padding: 3px 0;
-        }
-        #background-video-source {
-            position: absolute;
-            right: 50px;
-            bottom: 50px;
-            color: #fff;
-            text-decoration: none;
-        }
-        @media(max-width:500px) {
-            #background-video {
-               border: 7px solid #fff;
-            }
-            #background-video-source {
-                display: none;
-            }
-            h2 {
-                width: 80%;
-            }
-        }
-        </style>
+        <link rel="stylesheet" href="{{ "/css/front-page.css" | prepend: site.baseurl }}">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <video id="background-video" autoplay loop  style="background-image:inherit;" src="#"></video>
@@ -101,22 +26,6 @@ layout: none
                 <li><a href="mailto:jeanmarc@skopek.ca?subject=Hello"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
             </ul>
         </div>
-
-        <script type="text/javascript">
-            /* pick a random background from list of options */
-            var backgrounds = [
-                { 'id': 'london-city-center', 'source': 'City Center, London' },
-                { 'id': 'eiffel-tower', 'source': 'Eiffel Tower, Paris' },
-                { 'id': 'samuel-beckett-bridge', 'source': 'Samuel Beckett Bridge, Ireland' },
-            ];
-            var index = Math.floor(Math.random() * backgrounds.length);
-            var background = backgrounds[index];
-            document.getElementById('background-video').style.backgroundImage = "url(/assets/" + background.id + ".jpg)";
-            document.getElementById('background-video').src = "/assets/" + background.id + ".mp4";
-            document.getElementById('background-video-source').textContent = background.source;
-        </script>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <script type="text/javascript" src="{{ "/assets/front-page.js" | prepend: site.baseurl }}"></script>
     </body>
 </html>
