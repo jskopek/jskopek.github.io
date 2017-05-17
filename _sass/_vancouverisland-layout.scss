@@ -1,0 +1,34 @@
+section {
+    max-width: 800px;
+    margin: 2em auto;
+
+    img {
+        max-width: 100%;
+    }
+}
+section:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+section.wide {
+    max-width: 900px;
+}
+section.ultra-wide {
+    max-width: 100%;
+    .section-ultra-wide-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+.left { float: left; }
+.right { float: right; }
+.width-1 { width: 10%; }
+.width-2 { width: 20%; }
+.width-3 { width: 30%; }
+.width-4 { width: 40%; }
+.width-5 { width: 50%; }
+.width-6 { width: 60%; }
+.width-7 { width: 70%; }
+.width-8 { width: 80%; }
+.width-9 { width: 90%; }
