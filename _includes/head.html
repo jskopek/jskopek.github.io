@@ -30,6 +30,8 @@
   <meta name="twitter:player" content="{{ page.video | prepend: site.baseurl | prepend: site.url }}" />
   <meta name="twitter:player:width" content="{{ page.video-width }}" />
   <meta name="twitter:player:height" content="{{ page.video-height }}" />
+  {% elsif page.thumbnail %}
+  <meta property="og:image" content="{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}" />
   {% endif %}
   <meta name="twitter:card" content="{% if page.video %}player{% else %}summary{% endif %}" />
   <meta name="twitter:site" content="@jmskopek" />

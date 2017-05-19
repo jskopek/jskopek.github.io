@@ -4,10 +4,7 @@ title:  "A weekend on Vancouver Island"
 description: Vancouver has been suffering through an unusually wet April, and so the promise of a sunny weekend ahead meant that we had to do something special; after fielding a few ideas, we settled on Vancouver Island.
 date:   2017-05-17 20:22:40 +0100
 categories: travel
-video: /video/vancouver-island/sd/Tofino%20Pan%20Up.mp4.mp4
-video-image: /video/vancouver-island/thumbnails/V1-0001_Drone%20Pan%20Up.webmhd.mp4.png
-video-width: 640
-video-height: 361
+thumbnail: /video/vancouver-island/thumbnails/V1-0001_Drone%20Pan%20Up.webmhd.mp4.png
 ---
 
 <video playsinline muted="true" class="" poster="/video/vancouver-island/thumbnails/V1-0024_Driving Wet.webmhd.mp4.png" src="/video/vancouver-island/sd/V1-0024_Driving Wet.webmhd.mp4.mp4"></video>
