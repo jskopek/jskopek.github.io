@@ -1,5 +1,5 @@
 ---
-layout: clean
+layout: default
 title:  "A weekend on Vancouver Island"
 date:   2017-05-17 20:22:40 +0100
 categories: travel
@@ -49,7 +49,7 @@ At the top of the hike, you are rewarded with a panoramic view of Duncan and Sal
 
 <video muted="true" class="noloop" src="/clips-compressed/V1-0037_Cathedral Grove Entrance.webmhd.webm"></video>
 
-# Cathedral Grove and Port Alberni
+# Cathedral Grove
 
 If the idea of big trees excites you, Cathedral Grove is a must-see. The small 15 minute hike is nestled right by the side of the highway, making for an amazing break on your way to Tofino. 
 <video muted="true" class="" src="/clips-compressed/V1-0027_Cathedral Grove Big Tree.webmhd.webm"></video>
@@ -66,7 +66,7 @@ We decided to spend the night at a lovely AirBnB just outside of Port Alberni. O
 
 <video muted="true" class="" src="/clips-compressed/V1-0030_RV Cute Dog.webmhd.webm"></video>
 
-The farm was home to horses, pigs, and a few very friendly dogs who were very curious to meet us. If you're ever on the island, I highly recommend spending a night on Heather's farm.
+The farm was home to horses, pigs, and a few very friendly dogs who were very curious to meet us. If you're ever on the island, I highly recommend spending a night on [Heather's farm](https://www.airbnb.ca/rooms/7678613).
 
 <video muted="true" class="noloop" src="/clips-compressed/V1-0001_Drone Pan Up.webmhd.webm"></video>
 
