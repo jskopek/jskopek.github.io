@@ -1,0 +1,32 @@
+video {
+    cursor: pointer;
+    width: 100%;
+}
+video.small {
+    width: 31%;
+    margin: 1%;
+}
+video.fullscreen {
+    position: fixed;
+    width: 90%;
+    top: 50%;
+    margin-top: -25%;
+    left: 5%;
+    z-index: 2;
+
+}
+video.lead {
+    width: 100%;
+}
+body.fullscreen:before {
+    content: '';
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+

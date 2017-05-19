@@ -52,6 +52,14 @@
         //"layout",
         // "syntax-highlighting"
         "normalize",
+        "video",
+        "posts",
         "github-light",
         "custom-style"
 ;
+
+p {
+    max-width: 600px;
+    margin: 0em auto;
+    padding: 5em 0;
+}
