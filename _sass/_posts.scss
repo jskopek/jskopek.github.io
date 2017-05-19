@@ -1,4 +1,17 @@
 .main-content {
     max-width: 90% !important;
     padding: 2rem 0 !important;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        color: #A81C07 !important;
+    }
 }
+.page-header {
+    background-image: linear-gradient(120deg, #A81C07, #882D17) !important;
+}
+body {
+    //background-color: rgb(255, 250, 244);  // Color of Carbon Ark (http://planetpixelemporium.com/tutorialpages/light.html)
+    background-color: rgb(255, 255, 251);  // Color of High Noon Sun (http://planetpixelemporium.com/tutorialpages/light.html)
+}
+
