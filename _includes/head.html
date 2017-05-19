@@ -23,6 +23,7 @@
   {% if page.video and page.video-image and page.video-width and page.video-height %}
   <meta property="og:image" content="{{ page.video-image | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:video" content="{{ page.video | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:video:secure_url" content="{{ page.video | prepend: site.baseurl | prepend: site.url | replace:'http://','https://' }}" />
   <meta property="og:video:width" content="{{ page.video-width }}" />
   <meta property="og:video:height" content="{{ page.video-height }}" />
   <meta property="og:video:type" content="video/mp4" />
