@@ -1,6 +1,8 @@
 $(function() {
     $('video:not(.noloop)').each(function() { this.loop = true; });
     $('video.autoplay').each(function() { this.play(); });
+
+    //$('video').each(function() { this.pause(); });
     $('video:first')[0].play();
 
     $('video').appear();
@@ -17,15 +19,15 @@ $(function() {
     });
 
     // fullscreen toggle
-    $('video').on('click', function (e) {
-        $(this).toggleClass('fullscreen');
-        $('body').toggleClass('fullscreen');
-        if(!$(this).hasClass('fullscreen')) { easePlaybackOut(this); }
-    });
-    $('body').on('click', function(e) {
-        if(e.target.tagName.toLowerCase() == 'video') { return; }
-        $('video.fullscreen').click();
-    });
+//    $('video').on('click', function (e) {
+//        $(this).toggleClass('fullscreen');
+//        $('body').toggleClass('fullscreen');
+//        if(!$(this).hasClass('fullscreen')) { easePlaybackOut(this); }
+//    });
+//    $('body').on('click', function(e) {
+//        if(e.target.tagName.toLowerCase() == 'video') { return; }
+//        $('video.fullscreen').click();
+//    });
 
 });
 
