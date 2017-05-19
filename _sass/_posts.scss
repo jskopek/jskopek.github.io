@@ -11,6 +11,8 @@ $header: #4183c4;
     h1, h2, h3, h4, h5, h6 {
         text-align: center;
         color: $header;
+        margin-top: 0;
+        line-height: 1.3em;
     }
 }
 .page-header {
@@ -46,7 +48,7 @@ p {
     padding: 0;
 }
 video {
-    margin: 3.5em 0;
+    margin: 4em 0;
 }
 a {
     text-decoration: underline;
@@ -61,6 +63,9 @@ and (max-device-width : 667px) {
     }
     h1, h2, h3, h4, p, .site-footer {
         padding: 0 1em;
+    }
+    video {
+        margin: 2em 0;
     }
     .page-header {
         padding-top: 1em; 
