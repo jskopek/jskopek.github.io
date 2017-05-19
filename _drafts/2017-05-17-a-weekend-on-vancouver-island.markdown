@@ -7,11 +7,11 @@ categories: travel
 
 <video muted="true" class="" src="/clips-compressed/V1-0024_Driving Wet.webmhd.webm"></video>
 
-# What 48 Hours on Vancouver Island
-
 Vancouver has been suffering through an unusually wet April, and so the promise of a sunny weekend ahead meant that we had to do something special; after fielding a few ideas, we settled on Vancouver Island.
 
 <video muted="true" class="" src="/clips-compressed/V1-0025_Ferry Getting Underway.webmhd.webm"></video>
+
+# 48 Hours on Vancouver Island
 
 If you're looking for a special weekend off, you can't do much better than a trip to Vancouver Island.
 
@@ -68,7 +68,7 @@ We decided to spend the night at a lovely AirBnB just outside of Port Alberni. O
 
 The farm was home to horses, pigs, and a few very friendly dogs who were very curious to meet us. If you're ever on the island, I highly recommend spending a night on Heather's farm.
 
-<video muted="true" class="" src="/clips-compressed/Tofino Pan Up.webmhd.webm"></video>
+<video muted="true" class="noloop" src="/clips-compressed/V1-0001_Drone Pan Up.webmhd.webm"></video>
 
 # Tofino
 

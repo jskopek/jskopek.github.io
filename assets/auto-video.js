@@ -1,12 +1,19 @@
 $(function() {
     $('video:not(.noloop)').each(function() { this.loop = true; });
     $('video.autoplay').each(function() { this.play(); });
+    $('video:first')[0].play();
 
     $('video').appear();
-    $('video').on('disappear', function(e) {
-        e.currentTarget.pause();
-        $(e.currentTarget).nextAll('video')[0].play();
-        //debugger;
+    $('video').on('appear', function(e) {
+        if(!e.currentTarget.paused) { return; } // already playing
+
+        var videoBottomPixel = $(e.currentTarget).offset().top + $(e.currentTarget).height() / 2 // absolute bottom px of the current video
+        var windowBottomPixel = $(window).scrollTop() + $(window).height(); // absolute bottom px of the scrolled window
+        if(videoBottomPixel <= windowBottomPixel) {
+            // if the video's bottom is entirely in view, play it and pause other videos
+            $('video').each(function() { this.pause(); });
+            e.currentTarget.play();
+        }
     });
 
     // fullscreen toggle
