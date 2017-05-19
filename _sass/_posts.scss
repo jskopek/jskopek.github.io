@@ -46,9 +46,26 @@ p {
     padding: 0;
 }
 video {
-    margin: 4em 0;
+    margin: 3.5em 0;
 }
 a {
     text-decoration: underline;
 }
 
+// mobile
+@media only screen 
+and (max-device-width : 667px) { 
+    .page-header,
+    .main-content {
+        max-width: 100%;
+    }
+    h1, h2, h3, h4, p, .site-footer {
+        padding: 0 1em;
+    }
+    .page-header {
+        padding-top: 1em; 
+    }
+    .page-header .project-name a {
+        font-size: 0.8rem; 
+    }
+}
