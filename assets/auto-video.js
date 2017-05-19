@@ -9,6 +9,13 @@ $(function() {
     $('video').on('appear', function(e) {
         if(!e.currentTarget.paused) { return; } // already playing
 
+        // handle an edge case; the top video will not always 'activate', so we do a special check to see if the window is scrolled to the top and the first video is playing
+        if(($(window).scrollTop() == 0) && (!$('video:first')[0].playing)) {
+            $('video').each(function() { this.pause(); });
+            $('video:first')[0].play();
+            return;
+        }
+
         var videoBottomPixel = $(e.currentTarget).offset().top + $(e.currentTarget).height() / 2 // absolute bottom px of the current video
         var windowBottomPixel = $(window).scrollTop() + $(window).height(); // absolute bottom px of the scrolled window
         if(videoBottomPixel <= windowBottomPixel) {
@@ -17,6 +24,17 @@ $(function() {
             e.currentTarget.play();
         }
     });
+
+	$('.button-quality input').on('click', function(e) {
+        var isSd = $(this).is(':checked');
+        $('video').each(function() {
+            var isPlaying = !this.paused;
+            var hdSrc = $(this).attr('src').replace('/sd/', '/hd/').replace('.webmhd.mp4.mp4', '.webmhd.webm');
+            var sdSrc = $(this).attr('src').replace('/hd/', '/sd/').replace('.webmhd.webm', '.webmhd.mp4.mp4');
+           $(this).attr('src', isSd ? hdSrc : sdSrc);
+           if(isPlaying) { this.play(); }
+        });
+	});
 
     // fullscreen toggle
 //    $('video').on('click', function (e) {

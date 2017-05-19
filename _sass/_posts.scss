@@ -38,6 +38,28 @@ $header: #4183c4;
         display: none;
     }
 }
+.button-quality {
+    width: 100px;
+    margin: 0.67em 0;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.switch-light.switch-candy span span, .switch-light.switch-candy input:checked ~ span span:first-child, .switch-toggle.switch-candy label,
+    &.switch-light.switch-candy input ~ span span:first-child, .switch-light.switch-candy input:checked ~ span span:nth-child(2), .switch-candy input:checked + label {
+        text-shadow: none;
+        color: #214689;
+    }
+
+    &.switch-light.switch-candy > span {
+        background-color: $high-noon-sun;
+    }
+}
+
+
 body {
     //background-color: rgb(255, 250, 244);  
     background-color: $high-noon-sun;  // Color of High Noon Sun (http://planetpixelemporium.com/tutorialpages/light.html)
@@ -72,5 +94,8 @@ and (max-device-width : 667px) {
     }
     .page-header .project-name a {
         font-size: 0.8rem; 
+    }
+    .button-quality {
+        display: none;
     }
 }
