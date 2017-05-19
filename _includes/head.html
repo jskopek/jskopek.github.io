@@ -12,6 +12,28 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="article:author" content="Jean-Marc Skopek" />
+  <meta property="article:published_time" content="{{ page.date | date: "%b %-d, %Y" }}" />
+  <meta property="article:section" content="{{ page.categories }}" />
+  {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+  {% endif %}
+  {% if page.video and page.video-image and page.video-width and page.video-height %}
+  <meta property="og:image" content="{{ page.video-image | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:video" content="{{ page.video | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:video:width" content="{{ page.video-width }}" />
+  <meta property="og:video:height" content="{{ page.video-height }}" />
+  <meta property="og:video:type" content="video/mp4" />
+  <meta property="twitter:player" content="{{ page.video | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="twitter:player:width" content="{{ page.video-width }}" />
+  <meta property="twitter:player:height" content="{{ page.video-height }}" />
+  {% endif %}
+  <meta name="twitter:card" content="{% if page.video %}player{% else %}summary{% endif %}" />
+  <meta name="twitter:site" content="@jmskopek" />
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

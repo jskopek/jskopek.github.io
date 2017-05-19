@@ -1,17 +1,22 @@
 ---
 layout: default
 title:  "A weekend on Vancouver Island"
+description: Vancouver has been suffering through an unusually wet April, and so the promise of a sunny weekend ahead meant that we had to do something special; after fielding a few ideas, we settled on Vancouver Island.
 date:   2017-05-17 20:22:40 +0100
 categories: travel
+video: /video/vancouver-island/sd/Tofino%20Pan%20Up.mp4.mp4
+video-image: /video/vancouver-island/thumbnails/V1-0001_Drone%20Pan%20Up.webmhd.mp4.png
+video-width: 640
+video-height: 361
 ---
 
 <video playsinline muted="true" class="" poster="/video/vancouver-island/thumbnails/V1-0024_Driving Wet.webmhd.mp4.png" src="/video/vancouver-island/sd/V1-0024_Driving Wet.webmhd.mp4.mp4"></video>
 
+# 48 Hours on Vancouver Island
+
 Vancouver has been suffering through an unusually wet April, and so the promise of a sunny weekend ahead meant that we had to do something special; after fielding a few ideas, we settled on Vancouver Island.
 
 <video playsinline muted="true" class="" poster="/video/vancouver-island/thumbnails/V1-0025_Ferry Getting Underway.webmhd.mp4.png" src="/video/vancouver-island/sd/V1-0025_Ferry Getting Underway.webmhd.mp4.mp4"></video>
-
-# 48 Hours on Vancouver Island
 
 If you're looking for a special weekend off, you can't do much better than a trip to Vancouver Island.
 
@@ -45,7 +50,7 @@ The trail is beautiful. We found ourselves stopping dozens of times to take it a
 
 <video playsinline muted="true" class="" poster="/video/vancouver-island/thumbnails/Duncan Top.webmhd.mp4.png" src="/video/vancouver-island/sd/Duncan Top.webmhd.mp4.mp4"></video>
 
-At the top of the hike, you are rewarded with a panoramic view of Duncan and Salt Spring Island. There are plenty birds of all shapes and sizes; we were there in the middle of May, and Falcons and Eagles were still dotting the sky everywhere we went. The birdwatching is especially good from the top of Mt. Tzouhalem; we had a blast watching falcons fly past us at eye level.
+At the top of the hike, we were rewarded with a panoramic view of Duncan and Salt Spring Island. There are plenty birds of all shapes and sizes; we were there in the middle of May, and Falcons and Eagles were still dotting the sky everywhere we went. The birdwatching is especially good from the top of Mt. Tzouhalem; we had a blast watching falcons fly past us at eye level.
 
 <video playsinline muted="true" class="noloop" poster="/video/vancouver-island/thumbnails/V1-0037_Cathedral Grove Entrance.webmhd.mp4.png" src="/video/vancouver-island/sd/V1-0037_Cathedral Grove Entrance.webmhd.mp4.mp4"></video>
 
@@ -54,7 +59,7 @@ At the top of the hike, you are rewarded with a panoramic view of Duncan and Sal
 If the idea of big trees excites you, Cathedral Grove is a must-see. The small 15 minute hike is nestled right by the side of the highway, making for an amazing break on your way to Tofino.
 <video playsinline muted="true" class="" poster="/video/vancouver-island/thumbnails/V1-0027_Cathedral Grove Big Tree.webmhd.mp4.png" src="/video/vancouver-island/sd/V1-0027_Cathedral Grove Big Tree.webmhd.mp4.mp4"></video>
 
-It's hard to explain the size of the trees; some of the hollow ones have enough space to fit three people inside.
+It's hard to convey the size of the trees; some of the hollow ones have enough space to fit three people inside.
 
 <video playsinline muted="true" class="" poster="/video/vancouver-island/thumbnails/V1-0018_Cathedral Gove Walking.webmhd.mp4.png" src="/video/vancouver-island/sd/V1-0018_Cathedral Gove Walking.webmhd.mp4.mp4"></video>
 
@@ -93,6 +98,8 @@ It's easy to fill up 48 hours on the island, and before we knew it we were on ou
 All in all, we had a blast exploring the island. I highly recommend the trip if you're looking to get out of Vancouver for a weekend.
 
 Like this? Follow me on [twitter](https://twitter.com/jmskopek). I'll tweet when I film another story.
+
+<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/jquery.appear.js"></script>
