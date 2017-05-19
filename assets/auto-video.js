@@ -1,11 +1,15 @@
 $(function() {
     $('video:not(.noloop)').each(function() { this.loop = true; });
     $('video.autoplay').each(function() { this.play(); });
-    $('video:not(.autoplay)').on('mouseover', function() { easePlaybackIn(this); });
-    $('video:not(.autoplay)').on('mouseout', function() {
-        if($(this).hasClass('fullscreen')) { return; }
-        easePlaybackOut(this); 
+
+    $('video').appear();
+    $('video').on('disappear', function(e) {
+        e.currentTarget.pause();
+        $(e.currentTarget).nextAll('video')[0].play();
+        //debugger;
     });
+
+    // fullscreen toggle
     $('video').on('click', function (e) {
         $(this).toggleClass('fullscreen');
         $('body').toggleClass('fullscreen');
@@ -17,6 +21,8 @@ $(function() {
     });
 
 });
+
+// deprecated
 function easePlaybackIn(el) {
     el.playbackRate = 0.5;
     setTimeout(function() { el.playbackRate = 0.8; }, 200);
