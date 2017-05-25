@@ -7,7 +7,7 @@ categories: books
 thumbnail: /assets/letters-to-a-young-poet.jpg
 ---
 
-# Sacrificing oneself for creativity: Letters to a Young Poet
+# Creativity demands sacrifice: Lessons from the Letters to a Young Poet"
 
 ![Letters to a young poet](/assets/letters-to-a-young-poet.jpg)
 
