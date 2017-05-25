@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  "Creativity demands sacrifice: Lessons from the Letters to a Young Poet"
+title:  "Creativity Demands Sacrifice: Lessons From the Letters to a Young Poet"
 description: "The letters from celebrated poet Rainer Maria Rilke teach us what is needed to be truly creative, but perhaps this sacrifice is not for everyone."
 date:   2017-05-25 12:58:00 +0100
 categories: books
 thumbnail: /assets/letters-to-a-young-poet.jpg
 ---
 
-# Creativity demands sacrifice: Lessons from the Letters to a Young Poet
+# Creativity Demands Sacrifice: Lessons From the Letters to a Young Poet
 
 ![Letters to a young poet](/assets/letters-to-a-young-poet.jpg)
 
