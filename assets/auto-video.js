@@ -29,10 +29,8 @@ $(function() {
         var isSd = $(this).is(':checked');
         $('video').each(function() {
             var isPlaying = !this.paused;
-            var hdSrc = $(this).attr('src').replace('/sd/', '/hd/').replace('.webmhd.mp4.mp4', '.webmhd.webm');
-            var sdSrc = $(this).attr('src').replace('/hd/', '/sd/').replace('.webmhd.webm', '.webmhd.mp4.mp4');
-           $(this).attr('src', isSd ? hdSrc : sdSrc);
-           if(isPlaying) { this.play(); }
+            $(this).attr('src', isSd ? $(this).data('srcHd') : $(this).data('srcSd'));
+            if(isPlaying) { this.play(); }
         });
 	});
 
