@@ -5,7 +5,7 @@ description: "The Sloquet Hot Springs are a natural wonder and something of an u
 date:   2017-05-26 19:04:40 +0100
 categories: travel
 video-folder: hot-springs-weekend
-thumbnail: /video/vancouver-island/thumbnails/V1-0001_Drone%20Pan%20Up.webmhd.mp4.png
+thumbnail: /video/hot-springs-weekend/title.jpg
 ---
 
 {% include video.html title="Hot Springs Water 3" %}
