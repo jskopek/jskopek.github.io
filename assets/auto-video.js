@@ -8,6 +8,7 @@ $(function() {
     $('video').appear();
     $('video').on('appear', function(e) {
         if(!e.currentTarget.paused) { return; } // already playing
+        if(getUrlParameter('autoplay') == 'false') { return; } // check for disable param
 
         // handle an edge case; the top video will not always 'activate', so we do a special check to see if the window is scrolled to the top and the first video is playing
         if(($(window).scrollTop() == 0) && (!$('video:first')[0].playing)) {
@@ -59,3 +60,19 @@ function easePlaybackOut(el) {
     setTimeout(function() { el.playbackRate = 0.5; }, 200);
     setTimeout(function() { el.pause(); }, 400);
 }
+
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
