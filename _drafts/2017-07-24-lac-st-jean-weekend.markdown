@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "Lac St. Jean"
+title:  "Weekend at Lac St. Jean"
 description: "Weekend trip to Lac St Jean"
 date:   2017-07-23 19:04:40 +0100
 categories: travel
@@ -32,44 +32,37 @@ thumbnail: /video/hot-springs-weekend/title.jpg
     }
 </style>
 
-# Lac St. Jean
+# Weekend at Lac St. Jean
 
-The May Long weekend loomed on the horizon, and we decided we should do something special to celebrate our three days off. 
+It's been years since I've been able to visit the family island on Lac St. John. I decided to make the most of my time off, so I made my way out East to re-discover it with the family.
 
-<!---
-![Lac St. Jean](/assets/lac-st-jean/3.jpg)
-![Lac St. Jean](/assets/lac-st-jean/5.jpg)
-![Lac St. Jean](/assets/lac-st-jean/6.jpg)
-![Lac St. Jean](/assets/lac-st-jean/7.jpg)
-![Lac St. Jean](/assets/lac-st-jean/8.jpg)
-![Lac St. Jean](/assets/lac-st-jean/10.jpg)
-![Lac St. Jean](/assets/lac-st-jean/12.jpg)
-![Lac St. Jean](/assets/lac-st-jean/13.jpg)
-![Lac St. Jean](/assets/lac-st-jean/14.jpg)
-![Lac St. Jean](/assets/lac-st-jean/17.jpg)
-![Lac St. Jean](/assets/lac-st-jean/18.jpg)
-![Lac St. Jean](/assets/lac-st-jean/19.jpg)
-![Lac St. Jean](/assets/lac-st-jean/20.jpg)
-![Lac St. Jean](/assets/lac-st-jean/21.jpg)
-![Lac St. Jean](/assets/lac-st-jean/22.jpg)
-![Lac St. Jean](/assets/lac-st-jean/24.jpg)
---->
+{% include videoNew.html title="Hail Storm" %}
 
-<!---
+The weather came out in full force on the first day. The clouds were looking black on the horizon as we were loading up the boat for the trip to the island. The weather can change quickly on the lake, and before we knew it we were in the thick of the storm. The boat's electric motors couldn't keep up with the rising wind, so Elizabeth jumped overboard to haul us in for the last 50 meters. I hadn't seen thunder and lightning for ages, so this was quite the re-introduction.
+
 {% include videoNew.html title="Thunderstorm" %}
 
-The first night there was a huge thunderstorm.
+The storms came and went on the first day, but as the sun went down we were treated to a real light show. The sound of rain hitting the cabin windows was so cozy.
 
 {% include videoNew.html title="Feeding Miko" %}
 
-Miko is king of the island
+Miko is the newest addition to the family, and he's a real keeper. He was calm and obediant the entire weekend, which surprised me considering he is less than a year old. Life on the island is pretty sweet for a dog, with no leash to limit you and a whole world to smell and explore.
 
 {% include videoNew.html title="Fire at Night" %}
-{% include videoNew.html title="Hail Storm" %}
+
+We had plenty of campfires over the course of the weekend. There are dead trees everywhere on the island, and we took it upon ourselves to burn as much of it as possible.
+
 {% include videoNew.html title="Marc Antoine Fishing" %}
+
+Marc Antoine and Jean-Marc both tried their luck at fishing over the weekend. No luck for Marc Antoine, but Jean-Marc managed to catch something on his second try.
+
 {% include videoNew.html title="Mariane Wool Better" %}
---->
+
+Elizabeth discovered that the sweater she'd been working on was too big, so she spent a chunk of the weekend breaking it back down into strings of yarn. The job seemed a lot harder than anticipated, and the rolls of wool found themselves tangled on rocks, drowning in the lake, and chewed up by Miko.
+
 {% include videoNew.html title="Sunset" %}
+
+Like all good trips, the weekend at Lac. St. Jean went by way too quickly. Can't wait to go back again!
 
 <!--
 {% include videoNew.html title="Fire burning" %}
@@ -111,7 +104,7 @@ Miko is king of the island
     <ol class="indicator"></ol>
 </div>
 
-<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
+<!-- <label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label> -->
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/blueimp-gallery-2.25.2/js/blueimp-gallery.min.js"></script>
