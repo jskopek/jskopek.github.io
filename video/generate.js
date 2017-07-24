@@ -23,7 +23,7 @@ function generate(videoDir, generateHd, generateSd, generateThumbnail) {
         if(generateThumbnail) {
             ffmpeg(inputFile).on('end', () => {
                 fs.renameSync(path.join(videoDir, 'thumbnails', videoFilename, 'tn.png'), path.join(videoDir, 'thumbnails', videoName + '.png'));
-            }).screenshots({count: 1, folder: path.join(videoDir, 'thumbnails', videoFilename), size: '320x240'});
+            }).screenshots({count: 1, folder: path.join(videoDir, 'thumbnails', videoFilename), size: '420x236'});
         }
 
         console.log('{% include video.html title="' + videoName + '" %}');
@@ -32,9 +32,8 @@ function generate(videoDir, generateHd, generateSd, generateThumbnail) {
 }
 
 var args = minimist(process.argv.slice(2));
-console.log(args);
 
-var videoDir = args['_'];
+var videoDir = args['_'][0];
 var generateHd = args['nohd'] ? false : true;
 var generateSd = args['nosd'] ? false : true;
 var generateThumbnail = args['nothumbnail'] ? false : true;
