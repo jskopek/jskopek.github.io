@@ -1,11 +1,10 @@
 ---
 layout: default
-title:  "Weekend at Lac St. Jean"
-description: "Weekend trip to Lac St Jean"
+title:  "Week-end au Lac St. Jean"
+description: "Ca fait des années que j'ai pu visiter l'île de la famille sur le lac Saint-Jean. J'ai décidé de prendre avantage de mon congé et faire le voyage a l'Est pour retrouver l'isle avec la famille"
 date:   2017-07-23 19:04:40 +0100
 categories: travel
 video-folder: lac-st-jean
-thumbnail: /video/hot-springs-weekend/title.jpg
 ---
 
 <style type="text/css">
@@ -32,37 +31,37 @@ thumbnail: /video/hot-springs-weekend/title.jpg
     }
 </style>
 
-# Weekend at Lac St. Jean
+# Week-end au Lac St. Jean
 
-It's been years since I've been able to visit the family island on Lac St. John. I decided to make the most of my time off, so I made my way out East to re-discover it with the family.
+Ca fait des années que j'ai pu visiter l'île de la famille sur le lac Saint-Jean. J'ai décidé de prendre avantage de mon congé et faire le voyage a l'Est pour retrouver l'isle avec la famille.
 
 {% include videoNew.html title="Hail Storm" %}
 
-The weather came out in full force on the first day. The clouds were looking black on the horizon as we were loading up the boat for the trip to the island. The weather can change quickly on the lake, and before we knew it we were in the thick of the storm. The boat's electric motors couldn't keep up with the rising wind, so Elizabeth jumped overboard to haul us in for the last 50 meters. I hadn't seen thunder and lightning for ages, so this was quite the re-introduction.
+Le temps c'est bient gate pendent la premiere journee. Les nuages semblaient noirs à l'horizon alors que nous embarquions le bateau pour le voyage vers l'île. Les orages peuvent avancer vite sur le lac, et avant que nous ne le savions, nous étions dans la tempête. Le moteur électrique du bateau ne pouvait pas se battre contre le vent, alors Elizabeth a sauté par-dessus bord pour nous entraîner pendant les 50 derniers mètres. Ca fait des ans que j'ai vu du foudre, alors j'ai bien aimee cette introduction.
 
 {% include videoNew.html title="Thunderstorm" %}
 
-The storms came and went on the first day, but as the sun went down we were treated to a real light show. The sound of rain hitting the cabin windows was so cozy.
+Les tempêtes sont venues le premier jour, mais lorsque le soleil est tombé, nous avons été traités avec un véritable spectacle lumineux. Le bruit de la pluie qui frappait les fenêtres de la cabine était si confortable.
 
 {% include videoNew.html title="Feeding Miko" %}
 
-Miko is the newest addition to the family, and he's a real keeper. He was calm and obediant the entire weekend, which surprised me considering he is less than a year old. Life on the island is pretty sweet for a dog, with no leash to limit you and a whole world to smell and explore.
+Miko est l'addition le plus récent de la famille, et il est un véritable ange. Il était calme et obéissant pendant tout le week-end, ce qui m'a surpris en considérant qu'il est encore jeune. La vie sur l'île est assez douce pour un chien, sans aucune laisse pour vous limiter et un monde entier à explorer.
 
 {% include videoNew.html title="Fire at Night" %}
 
-We had plenty of campfires over the course of the weekend. There are dead trees everywhere on the island, and we took it upon ourselves to burn as much of it as possible.
+On a fait beaucoup de feux au cours du week-end. Il y a des arbres morts partout dans l'île, et on a essayee de brûler autant que possible.
 
 {% include videoNew.html title="Marc Antoine Fishing" %}
 
-Marc Antoine and Jean-Marc both tried their luck at fishing over the weekend. No luck for Marc Antoine, but Jean-Marc managed to catch something on his second try.
+Marc Antoine et Jean-Marc ont tous deux essayé leur chance avec la pêche. Pas de chance pour Marc Antoine, mais Jean-Marc a réussi à attraper quelque chose pendant son deuxième essai.
 
 {% include videoNew.html title="Mariane Wool Better" %}
 
-Elizabeth discovered that the sweater she'd been working on was too big, so she spent a chunk of the weekend breaking it back down into strings of yarn. The job seemed a lot harder than anticipated, and the rolls of wool found themselves tangled on rocks, drowning in the lake, and chewed up by Miko.
+Elizabeth a découvert que le sweater dont elle avait travaillé était trop gros, alors elle a dépensé un morceau du week-end en la detruisant. Le travail etait plus difficile que prévu, et les rouleaux de laine se sont retrouvés enroulés sur les roches, noyee dans le lac, et mâché par Miko.
 
 {% include videoNew.html title="Sunset" %}
 
-Like all good trips, the weekend at Lac. St. Jean went by way too quickly. Can't wait to go back again!
+Comme tous les bons voyages, le week-end au Lac. Saint Jean est passé trop vite. J'ai hâte d'y retourner!
 
 <!--
 {% include videoNew.html title="Fire burning" %}
@@ -91,7 +90,7 @@ Like all good trips, the weekend at Lac. St. Jean went by way too quickly. Can't
     <a href="/assets/lac-st-jean/24.jpg" title="Lac St. Jean"><img src="/assets/lac-st-jean/24.jpg" alt="Lac St. Jean"></a>
 </div>
 
-<a href="/assets/lac-st-jean/photos.zip" class="download-button">Download photos</a>
+<a href="/assets/lac-st-jean/photos.zip" class="download-button">Télécharger les photos</a>
 
 <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery">
