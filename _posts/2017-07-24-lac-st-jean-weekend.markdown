@@ -59,7 +59,7 @@ Marc Antoine et Jean-Marc ont tous deux essayé leur chance avec la pêche. Pas 
 
 Elizabeth a découvert que le sweater dont elle avait travaillé était trop gros, alors elle a dépensé un morceau du week-end en la detruisant. Le travail etait plus difficile que prévu, et les rouleaux de laine se sont retrouvés enroulés sur les roches, noyee dans le lac, et mâché par Miko.
 
-{% include videoNew.html title="Sunset" %}
+{% include videoNew.html title="Sunset" muted="true" %}
 
 Comme tous les bons voyages, le week-end au Lac. Saint Jean est passé trop vite. J'ai hâte d'y retourner!
 
