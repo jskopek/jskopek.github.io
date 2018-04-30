@@ -17,3 +17,4 @@ github_username:  jskopek
 
 # Build settings
 markdown: kramdown
+exclude: ["vendor"]
