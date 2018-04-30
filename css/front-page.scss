@@ -5,23 +5,25 @@ html, body { height: 100%; }
 body {
     padding: 0;
     margin: 0;
-    background: rgb(42, 87, 122);
+
+
+    /* Rectangle */
     font-family: 'Lato', sans-serif;
 }
-#background-video {
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   width: 100%;
-   height: 100%;
+.homepage-gradient {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    transition: opacity 2s ease-in-out;
 
-   border: 15px solid #fff;
-   box-sizing: border-box;
-
-   background-size: cover;
-   object-fit: cover;
+    &.two {
+        background: linear-gradient(130.23deg, #4F2500 -0.69%, #F24C4C 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+    }
+    &.one {
+        background: linear-gradient(130.23deg, #9B51E0 -0.69%, #671928 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+    }
 }
 #content {
     position: absolute;
@@ -43,7 +45,6 @@ body {
 label, a {
     color: #fff;
     text-decoration: none;
-    padding: 3px 8px;
 }
 a:hover {
     background-color: rgba(45, 59, 186, 0.3);
@@ -59,22 +60,13 @@ h2 {
 h2 a {
     padding: 3px 0;
 }
-#background-video-source {
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-    color: #fff;
-    text-decoration: none;
-}
-@media(max-width:500px) {
-    #background-video {
-       border: 7px solid #fff;
-    }
-    #background-video-source {
-        display: none;
-    }
-    h2 {
-        width: 80%;
-    }
-}
 
+#homepage-text {
+    color: #fff;
+    max-width: 500px;
+    font-size: 1.8em;
+    
+    a {
+        text-decoration: underline;
+    }
+}

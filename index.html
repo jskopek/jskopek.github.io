@@ -1,31 +1,20 @@
 ---
-layout: none
+layout: default
 ---
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jean-Marc Skopek</title>
-        <link rel="stylesheet" href="{{ "/css/front-page.css" | prepend: site.baseurl }}">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <video playsinline id="background-video" autoplay loop  style="background-image:inherit;" src="#"></video>
-        <label id="background-video-source" href="#"></label>
-        <div id="content">
-            <h1>Jean-Marc Skopek</h1>
-            <h2>Software developer. I like it when art and technology collide.</h2>
-            <ul id="menu">
-                <li><a href="https://skopek-blog.tumblr.com"><i class="fa fa-tumblr" aria-hidden="true"></i> Tumblr</a></li>
-                <li><a href="https://www.twitter.com/jmskopek"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                <li><a href="https://www.instagram.com/jskopek/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                <li><a href="https://github.com/jskopek"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
-                <li><a href="mailto:jeanmarc@skopek.ca?subject=Hello"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
-            </ul>
-        </div>
-        <script type="text/javascript" src="{{ "/assets/front-page.js" | prepend: site.baseurl }}"></script>
-    </body>
-</html>
+<link rel="stylesheet" href="{{ "/css/front-page.css" | prepend: site.baseurl }}">
+
+<div id="homepage-text">
+    <p>Hi! I'm Jean-Marc</p>
+    <p>I’m a software developer in Vancouver. I build clean, <a href="#">deceptively powerful web applications</a> for my clients.</p>
+    <p>I like <a href="https://vimeo.com/album/5136866">timelapses</a> and <a href="https://vimeo.com/album/5134437">drones</a> and <a href="https://www.flickr.com/photos/23630844@N02/">photography</a>. I occasionally <a href="/posts/">write</a>.</a>
+</div>
+<ul id="menu">
+    <li><a href="https://skopek-blog.tumblr.com"><i class="fa fa-tumblr" aria-hidden="true"></i> Tumblr</a></li>
+    <li><a href="https://www.twitter.com/jmskopek"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+    <li><a href="https://www.instagram.com/jskopek/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+    <li><a href="https://github.com/jskopek"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+    <li><a href="mailto:jeanmarc@skopek.ca?subject=Hello"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a></li>
+</ul>
+
+<script type="text/javascript" src="{{ "/assets/front-page.js" | prepend: site.baseurl }}"></script>
