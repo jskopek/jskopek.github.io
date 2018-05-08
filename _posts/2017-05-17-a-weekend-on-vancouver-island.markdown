@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "A weekend on Vancouver Island"
 description: Vancouver has been suffering through an unusually wet April, and so the promise of a sunny weekend ahead meant that we had to do something special; after fielding a few ideas, we settled on Vancouver Island.
 date:   2017-05-17 20:22:40 +0100

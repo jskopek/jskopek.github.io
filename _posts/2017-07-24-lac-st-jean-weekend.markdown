@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Week-end au Lac St. Jean"
 description: "Ca fait des années que j'ai pu visiter l'île de la famille sur le lac Saint-Jean. J'ai décidé de prendre avantage de mon congé et faire le voyage a l'Est pour retrouver l'isle avec la famille"
 date:   2017-07-23 19:04:40 +0100

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Creativity Demands Sacrifice: Lessons From the Letters to a Young Poet"
 description: "The letters from celebrated poet Rainer Maria Rilke teach us what is needed to be truly creative, but perhaps this sacrifice is not for everyone."
 date:   2017-05-25 12:58:00 +0100
