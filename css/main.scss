@@ -1,61 +1,80 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Homepage
 ---
 @charset "utf-8";
 
 
-
-// // Our variables
-// $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $base-font-size:   16px;
-// $base-font-weight: 400;
-// $small-font-size:  $base-font-size * 0.875;
-// $base-line-height: 1.5;
-// 
-// $spacing-unit:     30px;
-// 
-// $text-color:       #111;
-// $background-color: #fdfdfd;
-// $brand-color:      #2a7ae2;
-// 
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
-// 
-// // Width of the content area
-// $content-width:    800px;
-// 
-// $on-palm:          600px;
-// $on-laptop:        800px;
-// 
-// 
-// 
-// // Use media queries like this:
-// // @include media-query($on-palm) {
-// //     .wrapper {
-// //         padding-right: $spacing-unit / 2;
-// //         padding-left: $spacing-unit / 2;
-// //     }
-// // }
-// @mixin media-query($device) {
-//     @media screen and (max-width: $device) {
-//         @content;
-//     }
-// }
-// 
-// 
-// 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        //"base",
-        //"layout",
         // "syntax-highlighting"
+        //"github-light",
         "normalize",
-        "github-light",
-        "custom-style",
         "homepage-content",
         "video",
-        "toggle-switch",
-        "posts"
+        "toggle-switch"
 ;
+
+.image-tile-two img {
+    float: left;
+    width: 50%;
+}
+.image-tile-three img:first-child {
+    float: left;
+    width: 66.66%;
+}
+.image-tile-three img:nth-child(2),
+.image-tile-three img:nth-child(3) {
+    float: right;
+    width: 33.33%;
+}
+.image-tile-fixed-height img {
+    height: 350px;
+    object-fit: cover;
+}
+.image-tile-no-space {
+    margin: 0;
+}
+
+html, body { height: 100%; }
+body {
+    padding: 0;
+    margin: 0;
+
+
+    /* Rectangle */
+    font-family: 'Lato', sans-serif;
+}
+.background-gradient {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    transition: opacity 2s ease-in-out;
+    z-index: 1;
+
+    &.two {
+        background: linear-gradient(130.23deg, #4F2500 -0.69%, #F24C4C 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+    }
+    &.one {
+        background: linear-gradient(130.23deg, #9B51E0 -0.69%, #671928 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+    }
+}
+#content {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    height: 100%; /* in place so homepage-content works */
+
+    h1, h2, h3, p, a, span {
+        color: #fff;
+        margin: 0.1em 0;
+    }
+}
+
+.page-header {
+    background: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

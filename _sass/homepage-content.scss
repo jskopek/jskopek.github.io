@@ -3,12 +3,16 @@
     bottom: 50px;
     left: 50px;
 
-    max-width: 500px;
+    max-width: 600px;
     font-size: 1.8rem;
     
     a {
-        text-decoration: underline;
-        padding: 3px 0;
+        text-decoration: none;
+        padding: 0 5px;
+
+        span {
+            text-decoration: underline;
+        }
 
         &:hover {
             background-color: rgba(45, 59, 186, 0.3);
@@ -22,8 +26,6 @@
         font-size: 1.2rem;
 
         a { 
-            text-decoration: none;
-
             i {
                 width: 16px;
                 margin-right: 5px;
