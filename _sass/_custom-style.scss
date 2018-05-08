@@ -19,6 +19,45 @@
 .image-tile-no-space {
     margin: 0;
 }
+
+html, body { height: 100%; }
+body {
+    padding: 0;
+    margin: 0;
+
+
+    /* Rectangle */
+    font-family: 'Lato', sans-serif;
+}
+.background-gradient {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    transition: opacity 2s ease-in-out;
+    z-index: 1;
+
+    &.two {
+        background: linear-gradient(130.23deg, #4F2500 -0.69%, #F24C4C 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+    }
+    &.one {
+        background: linear-gradient(130.23deg, #9B51E0 -0.69%, #671928 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+    }
+}
+#content {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    height: 100%; /* in place so homepage-content works */
+
+    h1, h2, h3, p, a {
+        color: #fff;
+        margin: 0.1em 0;
+    }
+}
+
+
 /*** /CUSTOM ***/
 
 * {
