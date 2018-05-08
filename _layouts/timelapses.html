@@ -8,7 +8,7 @@ layout: default
     <a href="/timelapses">Back</a>
     <div style="padding:66.8% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/{{ page.vimeoId }}?autoplay=1&color=ff0179&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-    {{ content }}
+    <p>{{ page.summary }}</p>
 
     <div class="nav">
         {% if page.previous.url %}
