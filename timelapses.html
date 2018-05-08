@@ -1,0 +1,26 @@
+---
+layout: default
+title: Timelapses
+permalink: /timelapses/
+---
+
+<p><a href="/">home</a></p>
+
+{% assign europe = site.timelapses | where: "categories", "europe" %}
+{% assign canada = site.timelapses | where: "categories", "canada" %}
+{% assign stanley_park = site.timelapses | where: "categories", "stanley-park" %}
+
+<h1>Canada</h1>
+{% for item in canada %}
+    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
+
+<h1>Stanley Park</h1>
+{% for item in stanley_park %}
+    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
+
+<h1>Europe</h1>
+{% for item in europe %}
+    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
