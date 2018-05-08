@@ -30,7 +30,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 .background-gradient {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
     right: 10px;
@@ -51,7 +51,7 @@ body {
     z-index: 2;
     height: 100%; /* in place so homepage-content works */
 
-    h1, h2, h3, p, a {
+    h1, h2, h3, p, a, span {
         color: #fff;
         margin: 0.1em 0;
     }
