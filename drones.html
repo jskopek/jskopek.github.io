@@ -1,0 +1,14 @@
+---
+layout: default
+title: Drone Pans
+permalink: /drones/
+---
+
+<p><a href="/">home</a></p>
+
+{% assign bc = site.dronepans | where: "categories", "bc" %}
+
+<h1>BC</h1>
+{% for item in bc %}
+    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}

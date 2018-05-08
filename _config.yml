@@ -22,3 +22,5 @@ exclude: ["vendor"]
 collections:
     timelapses:
         output: true
+    dronepans:
+        output: true
