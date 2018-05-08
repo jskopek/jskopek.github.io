@@ -1,5 +1,5 @@
 ---
-layout: timelapses
+layout: drones
 title:  "Whytecliff Island Trippy"
 date:   2018-03-03 00:00:01 +0100
 vimeoId: 266626020
