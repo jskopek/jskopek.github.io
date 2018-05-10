@@ -8,7 +8,6 @@
       <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
       <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <script src="https://use.fortawesome.com/d67f9c0e.js"></script>
       <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
@@ -54,8 +53,9 @@
       </script>
     </head>
     <body>
-        <div class="background-gradient one" style="opacity: 1.0;"></div>
+        <div class="background-gradient one" style="opacity: 0.0;"></div>
         <div class="background-gradient two" style="opacity: 0.0;"></div>
+        <div class="background-gradient three" style="opacity: 1.0;"></div>
         <div id="content">
             {{ content }}
         </div>

@@ -6,7 +6,7 @@ permalink: /drones/
 
 {% assign bc = site.dronepans | where: "categories", "bc" %}
 
-<h1>BC</h1>
+<h1 class="text-underline">BC</h1>
 {% for item in bc %}
     <p><a href="{{ item.url }}">{{ item.title }}</a></p>
 {% endfor %}

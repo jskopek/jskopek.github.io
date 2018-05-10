@@ -8,17 +8,23 @@ permalink: /timelapses/
 {% assign canada = site.timelapses | where: "categories", "canada" %}
 {% assign stanley_park = site.timelapses | where: "categories", "stanley-park" %}
 
-<h1>Canada</h1>
-{% for item in canada %}
-    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-{% endfor %}
+<h1 class="text-underline">Canada</h1>
+<div class="timelapse-summaries">
+    {% for item in canada %}
+    <div class="timelapse-summary"><a href="{{ item.url }}">{{ item.title }}</a></div>
+    {% endfor %}
+</div>
 
-<h1>Stanley Park</h1>
-{% for item in stanley_park %}
-    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-{% endfor %}
+<h1 class="text-underline">Stanley Park</h1>
+<div class="timelapse-summaries">
+    {% for item in stanley_park %}
+    <div class="timelapse-summary"><a href="{{ item.url }}">{{ item.title }}</a></div>
+    {% endfor %}
+</div>
 
-<h1>Europe</h1>
-{% for item in europe %}
-    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-{% endfor %}
+<h1 class="text-underline">Europe</h1>
+<div class="timelapse-summaries">
+    {% for item in europe %}
+    <div class="timelapse-summary"><a href="{{ item.url }}">{{ item.title }}</a></div>
+    {% endfor %}
+</div>

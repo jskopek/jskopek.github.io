@@ -9,6 +9,7 @@
         // "syntax-highlighting"
         //"github-light",
         "normalize",
+        "typography",
         "homepage-content",
         "video",
         "toggle-switch"
@@ -53,6 +54,9 @@ body {
     transition: opacity 2s ease-in-out;
     z-index: 1;
 
+    &.three {
+        background: linear-gradient(155.56deg, #DE0E64 -6.66%, #790505 102.89%), linear-gradient(172.82deg, #141414 50.59%, #2E3F94 103.63%), linear-gradient(162.3deg, #6EBADB 0.05%, #213496 101.26%), #C4C4C4;
+    }
     &.two {
         background: linear-gradient(130.23deg, #4F2500 -0.69%, #F24C4C 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
     }
@@ -73,8 +77,53 @@ body {
 }
 
 .page-header {
-    background: red;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    i {
+        margin-right: 0.2em;
+    }
+
+    h1 i {
+        font-size: 0.8em;
+    }
+}
+
+ul.list-no-bullets {
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+.post-summary {
+    margin-bottom: 1.5em;
+
+    i {
+        color: #fff;
+        font-size: 1.2em;
+        margin-right: 0.2em;
+    }
+    a {
+        font-weight: bold;
+        font-size: 1.2em;
+        text-decoration: underline;
+    }
+    .date {
+        margin-top: 0.2em;
+        font-size: 0.8em;
+        color: #E0E0E0;
+    }
+    p {
+        margin-top: 0.2em;
+    }
+}
+.timelapse-summaries {
+    margin-bottom: 2em;
 }

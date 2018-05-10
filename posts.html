@@ -2,6 +2,7 @@
 layout: post
 ---
 
+{% comment %}
 <ul>
     {% for post in site.posts %}
     <li>
@@ -9,9 +10,10 @@ layout: post
     </li>
     {% endfor %}
 </ul>
+{% endcomment %}
 
-<h2>Technology</h2>
-<ul>
+<h2 class="text-underline">Technology</h2>
+<ul class="list-no-bullets">
     {% include postSummary.html title="Encoding Video with .NET Core and Azure Media Services" date="April 23, 2018" url="https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-and-azure-media-services-part-1-51bf6035ffcb" summary="Azure Media Services offers a powerful set of video editing and delivery tools, but there is no official library for .NET Core. In this tutorial, I demonstrate how to build a basic REST client to upload and encode video with Azure" %}
     {% include postSummary.html title="How does Dropbox Paper have such pretty text?" date="Sep 15, 2017" url="https://medium.com/@jmskopek/how-does-dropbox-paper-have-such-pretty-text-a0e0fa4e8d97" summary="A dive into the Dropbox stylesheets to see just how the designers pulled off the Dropbox Paper design. The attention to detail is quite impressive." %}
     {% include postSummary.html title="Setting up a Python and Postgres development environment using Vagrant" date="Nov 19, 2016" url="https://medium.com/jean-marcs-thoughts/setting-up-a-python-and-postgres-development-environment-using-vagrant-97554874c834" summary="A guide to setting up a new Vagrant virtual environment with Python and Postgres" %}
@@ -21,14 +23,14 @@ layout: post
     {% include postSummary.html title="Exploring Django asset pipelines: Django Assets Toolkit" date="Mar 5, 2014" url="https://medium.com/@jmskopek/exploring-django-asset-pipelines-django-assets-toolkit-dbf0a32ea2c8" summary="Exploring one approach to compiling and deploying assets in Django." %}
 </ul>
 
-<h2>Life</h2>
-<ul>
+<h2 class="text-underline">Life</h2>
+<ul class="list-no-bullets">
     {% include postSummary.html title="My Front Row Seat to Pigeon Parenting" date="Nov 3, 2017" url="https://medium.com/@jmskopek/my-front-row-seat-to-pigeon-parenting-d2f4b7a7765" summary="I woke up one morning to discover that a pair of pigeons had started a family on my balcony. When life gives you lemons, take tons of pictures" %}
     {% include postSummary.html title="Creativity Demands Sacrifice: Lessons From the Letters to a Young Poet" date="May 25, 2017" url="/books/2017/05/25/letters-to-a-young-poet.html" summary="Thoughts on “Letters to a Yong Poet” - a short collection of letters between a young poet and a celebrated master. My first - and only - book review!" %}
 </ul>
 
-<h2>Travel</h2>
-<ul>
+<h2 class="text-underline">Travel</h2>
+<ul class="list-no-bullets">
     {% include postSummary.html title="Sloquet Hot Springs" date="May 26, 2017" url="/travel/2017/05/26/sloquet-hot-springs.html" summary="The Sloquet Hot Springs are located on a remote dirt road 6 hours north of Vancouver. They are well worth the long drive up" %}
     {% include postSummary.html title="48 Hours on Vancouver Island" date="May 17, 2017" url="/travel/2017/05/17/a-weekend-on-vancouver-island" summary="A rare sunny April weekend meant we had to go exploring. With 48 hours on the clock, we decided to check out Vancouver Island’s greatest hits: Tofino and Cathedral Grove" %}
     {% include postSummary.html title="A month in Vietnam: Ho Chi Minh" date="Feb 8, 2016" url="https://medium.com/@jmskopek/a-month-in-vietnam-ho-chi-minh-34bb558b3043" summary="A month-long trip to Vietnam left me with plenty to think and write about. Embarassingly, I never managed to get beyond the first chapter of this blog series, but Ho Chi Minh is still a place I revisit in my memories" %}
