@@ -3,10 +3,12 @@ layout: post
 ---
 
 {% for category in site.categories %}
-<h2 class="text-underline">{{ category[0]|capitalize }}</h2>
-    <ul class="list-no-bullets">
-        {% for post in category[1] %}
-            {% include postSummary.html title=post.title date=post.date url=post.url summary=post.description %}
-        {% endfor %}
-    </ul>
+<div style="float: left; width: 45%; margin-right: 5%; margin-bottom: 3em;">
+    <h1 class="mb-2">{{ category[0]|capitalize }}</h1>
+    {% for post in category[1] %}
+    {% unless post.ignore %}
+    {% include postSummary.html title=post.title date=post.date url=post.url summary=post.description %}
+    {% endunless %}
+    {% endfor %}
+</div>
 {% endfor %}

@@ -4,6 +4,7 @@ title:  "Encoding Video with .NET Core and Azure Media Services - Part 2"
 description: "Azure Media Services offers a powerful set of video editing and delivery tools, but there is no official library for .NET Core. In this tutorial, I demonstrate how to build a basic REST client to upload and encode video with Azure"
 date:   2018-04-24 12:00:00 +0000
 canonical: "https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-and-azure-media-services-part-2-b19e6de42b60"
+ignore: true
 categories: programming
 ---
 
