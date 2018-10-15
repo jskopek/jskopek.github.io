@@ -91,4 +91,4 @@ Run the project, and you should have an HttpClient that has been authorized with
 
 Congratulations! You have created a MediaServices class and successfully authenticated with your Azure Media Services instance. At this point, your code [should look something like this project](https://github.com/jskopek/AzureMediaServicesEncoderNetCore/tree/2dca4cac6436d1a63c2ff297718e555f103a3cca).
 
-In [Part 2](/programming/2018/04/24/encoding-video-with-net-core-and-azure-media-services-part-2.html), we will start uploading files to Azure and creating Media Services Assets.
+In [Part 2](/posts/programming/2018/04/24/encoding-video-with-net-core-and-azure-media-services-part-2.html), we will start uploading files to Azure and creating Media Services Assets.

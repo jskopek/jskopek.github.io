@@ -12,7 +12,7 @@ categories: programming
 
 ## Part 3: Running an Azure Media Services Job
 
-In [Part 2](/programming/2018/04/24/encoding-video-with-net-core-and-azure-media-services-part-2.html), we were able to upload a video file to Azure Media Services. Now that an *Asset* has been created and a file has been uploaded to it, let’s run an encoding job on it.
+In [Part 2](/posts/programming/2018/04/24/encoding-video-with-net-core-and-azure-media-services-part-2.html), we were able to upload a video file to Azure Media Services. Now that an *Asset* has been created and a file has been uploaded to it, let’s run an encoding job on it.
 
 Before we can create an encoding job, we must request an Azure Media Services media processor. AMS has many media processors, each of which can do different tasks. Some of these include:
 
