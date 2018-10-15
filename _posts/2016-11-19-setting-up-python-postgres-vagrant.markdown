@@ -7,8 +7,6 @@ canonical: "https://medium.com/jean-marcs-thoughts/setting-up-a-python-and-postg
 categories: programming
 ---
 
-# Setting up a Python and Postgres development environment using Vagrant
-
 It can always be a little annoying getting a fresh new work environment running. This guide is my attempt to keep track of how to get running as quickly as possible.
 
 We’ll be using Vagrant, so these instructions should work with pretty much every development environment out there. I’m running this on a PC at the moment, but the same guide should work with Mac or Linux environments as well.

@@ -7,8 +7,6 @@ canonical: "https://medium.com/@jmskopek/suboptimal-python-d29858ddbe1f"
 categories: programming
 ---
 
-# Suboptimal Python
-
 Why it doesn’t always make sense to think about performance
 
 I recently watched [an interesting talk](https://www.youtube.com/watch?v=50OIO9ONmks) by [@regebro](http://twitter.com/regebro) on sub-optimal, prehistoric patterns. Through the 25 minute talk, Lennart walks through several programming patterns and examines their performance accross multiple python versions. There’s a lot of meat in these 25 minutes.

@@ -7,8 +7,6 @@ canonical: "https://medium.com/@jmskopek/fast-insert-or-update-statements-with-d
 categories: programming
 ---
 
-# Fast insert or update statements with Django
-
 TLDR: use update_or_create / get_or_create when the likelihood of updating existing instances is high. Use create with an IntegrityError catch when the odds of inserting new instances is higher.
 
 Anyone who has worked with Django for any period of time will inevitable run into the *update_or_create* / *get_or_create* methods. These are wonderful little methods that simplify the process of inserting or updating a model instance.

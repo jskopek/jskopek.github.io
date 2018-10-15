@@ -7,8 +7,6 @@ categories: books
 thumbnail: /assets/letters-to-a-young-poet.jpg
 ---
 
-# Creativity Demands Sacrifice: Lessons From the Letters to a Young Poet
-
 ![Letters to a young poet](/assets/letters-to-a-young-poet.jpg)
 
 Creativity demands sacrifice.

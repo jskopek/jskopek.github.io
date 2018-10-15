@@ -7,11 +7,9 @@ canonical: "https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-
 categories: programming
 ---
 
-# Encoding Video with .NET Core and Azure Media Services — Part 2
-
 ![1](/assets/encoding-video-with-net-core/1.png)
 
-### Part 2: Uploading Videos to Azure Storage
+## Part 2: Uploading Videos to Azure Storage
 
 Let’s continue from where we left off in [Part 1](/programming/2018/04/23/encoding-video-with-net-core-and-azure.html). We now have a MediaServices class that can communicate with Azure Media Services and establish an authentication token. Now let’s upload a video to Azure.
 

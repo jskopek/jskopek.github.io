@@ -7,8 +7,6 @@ canonical: "https://medium.com/@jmskopek/moving-away-from-a-b-tests-4fb66d8ee9e2
 categories: programming
 ---
 
-# Moving away from A/B Tests
-
 I’ve long been an advocate of using A/B tests to build things. That’s slowly starting to change.
 
 Ever since Markus Frind introduced the concept of “intuition guides, data decides” to me nearly two years ago, I’ve been A/B testing my way through life. Recently, however, I’ve found myself subconsciously moving away from the darling in my development toolkit. What could be happening? After some introspection, I think I’ve figured it out:

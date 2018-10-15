@@ -7,11 +7,9 @@ canonical: "https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-
 categories: programming
 ---
 
-# Encoding Video with .NET Core and Azure Media Services — Part 3
-
 ![1](/assets/encoding-video-with-net-core/1.png)
 
-### Part 3: Running an Azure Media Services Job
+## Part 3: Running an Azure Media Services Job
 
 In [Part 2](/programming/2018/04/24/encoding-video-with-net-core-and-azure-media-services-part-2.html), we were able to upload a video file to Azure Media Services. Now that an *Asset* has been created and a file has been uploaded to it, let’s run an encoding job on it.
 

@@ -9,7 +9,7 @@ categories: programming
 
 ![1](/assets/encoding-video-with-net-core/1.png)
 
-# Part 1: Authenticating with Azure Media Services
+## Part 1: Authenticating with Azure Media Services
 
 Azure Media Services is a service that can encode video for mobile devices, generate thumbnails, and even create subtitles from audio tracks. It’s powerful and cheap, and I wanted to use it in an application.
 
