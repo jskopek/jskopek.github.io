@@ -12,7 +12,7 @@ categories: programming
 
 ## Part 2: Uploading Videos to Azure Storage
 
-Let’s continue from where we left off in [Part 1](/posts/programming/2018/04/23/encoding-video-with-net-core-and-azure.html). We now have a MediaServices class that can communicate with Azure Media Services and establish an authentication token. Now let’s upload a video to Azure.
+Let’s continue from where we left off in [Part 1]({% post_url 2018-04-23-encoding-video-with-net-core-and-azure %}). We now have a MediaServices class that can communicate with Azure Media Services and establish an authentication token. Now let’s upload a video to Azure.
 
 ### How files are uploaded to Azure
 
@@ -76,4 +76,4 @@ Your code [should now look like this](https://github.com/jskopek/AzureMediaServi
 
 If you are having trouble determining the state of your Azure Media Services account, you may wish to install the [Azure Media Services Explorer](https://github.com/Azure/Azure-Media-Services-Explorer). This tool provides a nice GUI for navigating your Azure Media Services instance.
 
-In the next step, we will [encode our newly uploaded video file](/posts/programming/2018/05/08/encoding-video-with-net-core-and-azure-media-services-part-3.html).
+In the next step, we will [encode our newly uploaded video file]({% post_url 2018-05-08-encoding-video-with-net-core-and-azure-media-services-part-3 %}).

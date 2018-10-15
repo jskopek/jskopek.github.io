@@ -15,7 +15,7 @@ url: "http://jeanmarc.skopek.ca" # the base hostname & protocol for your site
 twitter_username: jmskopek
 github_username:  jskopek
 
-permalink: /posts/:categories/:year/:month/:day/:title:output_ext
+permalink: /writing/:categories/:year/:month/:day/:title:output_ext
 
 # Build settings
 markdown: kramdown
