@@ -4,16 +4,15 @@ title:  "Encoding Video with .NET Core and Azure Media Services - Part 3"
 description: "Azure Media Services offers a powerful set of video editing and delivery tools, but there is no official library for .NET Core. In this tutorial, I demonstrate how to build a basic REST client to upload and encode video with Azure"
 date:   2018-05-08 12:00:00 +0000
 canonical: "https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-and-azure-media-services-part-3-5429c9c14e5a"
+ignore: true
 categories: programming
 ---
 
-# Encoding Video with .NET Core and Azure Media Services — Part 3
-
 ![1](/assets/encoding-video-with-net-core/1.png)
 
-### Part 3: Running an Azure Media Services Job
+## Part 3: Running an Azure Media Services Job
 
-In [Part 2](/programming/2018/04/24/encoding-video-with-net-core-and-azure-media-services-part-2.html), we were able to upload a video file to Azure Media Services. Now that an *Asset* has been created and a file has been uploaded to it, let’s run an encoding job on it.
+In [Part 2](/posts/programming/2018/04/24/encoding-video-with-net-core-and-azure-media-services-part-2.html), we were able to upload a video file to Azure Media Services. Now that an *Asset* has been created and a file has been uploaded to it, let’s run an encoding job on it.
 
 Before we can create an encoding job, we must request an Azure Media Services media processor. AMS has many media processors, each of which can do different tasks. Some of these include:
 

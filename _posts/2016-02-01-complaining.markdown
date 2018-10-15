@@ -2,6 +2,7 @@
 layout: post
 title:  "The cheaper the place you stay in, the less you have to complain about"
 date:   2016-02-01 20:22:40 +0100
+ignore: true
 categories: travel
 ---
 I'm staying at an incredible resort in Vietnam right now. The common area has a beautiful pool with plenty of lounge seats all around it. I'm sitting in one at the moment, watching a plastic wrapper float around on top of the water. The first time I saw it, I felt annoyed. I'm spending a large amount of money (by my standards) to stay here - how can they be ok with a plastic wrapper floating around the pool?

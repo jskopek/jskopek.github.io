@@ -1,6 +1,6 @@
-<li class="post-summary">
-    <i class="fa fa-medium"></i> <a href="{{ include.url }}">{{ include.title }}</a>
-    <p class="text-light">{{ include.summary }}</p>
-    <div class="date text-light">{{ include.date }}</div>
-</li>
+<div class="post-summary">
+    <i class="fa fa-medium"></i> <a href="{{ include.url }}" class="text-primary">{{ include.title }}</a>
+    <div class="date text-secondary">{{ include.date|date_to_long_string }}</div>
+    <p class="text-secondary">{{ include.summary }}</p>
+</div>
 

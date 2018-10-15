@@ -7,8 +7,6 @@ canonical: "https://medium.com/@jmskopek/how-does-dropbox-paper-have-such-pretty
 categories: programming
 ---
 
-# How does Dropbox Paper have such pretty text?
-
 I’ve been hearing good things about Dropbox Paper for a while now, but it wasn’t until a couple of days ago that I finally got around to trying it.
 
 Wow, what a beautiful tool.

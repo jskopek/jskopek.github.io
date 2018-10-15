@@ -53,11 +53,22 @@
       </script>
     </head>
     <body>
-        <div class="background-gradient one" style="opacity: 0.0;"></div>
-        <div class="background-gradient two" style="opacity: 0.0;"></div>
-        <div class="background-gradient three" style="opacity: 1.0;"></div>
-        <div id="content">
-            {{ content }}
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-2 nav-col">
+                    <h1 class="main-title"><a href="/">Jean Marc Skopek</a></h1>
+                    <ul class="nav flex-column main-nav">
+                        <li class="nav-item nav-link {% if page.url contains '/posts' %}active{% endif %}"><a href="/posts/" class="nav-link">Writing</a></li>
+                        <li class="nav-item nav-link {% if page.url contains '/timelapses' %}active{% endif %}"><a href="/timelapses/" class="nav-link">Timelapses</a></li>
+                        <li class="nav-item nav-link {% if page.url contains '/drones' %}active{% endif %}"><a href="/drones/" class="nav-link">Drones</a></li>
+                        <li class="nav-item nav-link {% if page.url contains '/photography' %}active{% endif %}"><a href="/photography/" class="nav-link">Photography</a></li>
+                        {% comment %}<li class="nav-item nav-link {% if page.url contains '/projects' %}active{% endif %}"><a href="/projects/" class="nav-link">Projects</a></li>{% endcomment %}
+                    </ul>
+                </div>
+                <div class="col col-md-10">
+                    {{ content }}
+                </div>
+            </div>
         </div>
     </body>
 </html>

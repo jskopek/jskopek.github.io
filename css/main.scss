@@ -3,127 +3,159 @@
 ---
 @charset "utf-8";
 
+@import './bootstrap-4.1.3/scss/bootstrap';
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        // "syntax-highlighting"
-        //"github-light",
-        "normalize",
-        "typography",
-        "homepage-content",
-        "video",
-        "toggle-switch"
-;
+//// Import partials from `sass_dir` (defaults to `_sass`)
+//@import
+//        // "syntax-highlighting"
+//        //"github-light",
+//        "normalize",
+//        "typography",
+//        "homepage-content",
+//        "video",
+//        "toggle-switch"
+//;
+//
+//.image-tile-two img {
+//    float: left;
+//    width: 50%;
+//}
+//.image-tile-three img:first-child {
+//    float: left;
+//    width: 66.66%;
+//}
+//.image-tile-three img:nth-child(2),
+//.image-tile-three img:nth-child(3) {
+//    float: right;
+//    width: 33.33%;
+//}
+//.image-tile-fixed-height img {
+//    height: 350px;
+//    object-fit: cover;
+//}
+//.image-tile-no-space {
+//    margin: 0;
+//}
+//
+//html, body { height: 100%; }
+//body {
+//    padding: 0;
+//    margin: 0;
+//
+//
+//    /* Rectangle */
+//    font-family: 'Lato', sans-serif;
+//}
+//.background-gradient {
+//    position: fixed;
+//    top: 10px;
+//    left: 10px;
+//    right: 10px;
+//    bottom: 10px;
+//    transition: opacity 2s ease-in-out;
+//    z-index: 1;
+//
+//    &.three {
+//        background: linear-gradient(155.56deg, #DE0E64 -6.66%, #790505 102.89%), linear-gradient(172.82deg, #141414 50.59%, #2E3F94 103.63%), linear-gradient(162.3deg, #6EBADB 0.05%, #213496 101.26%), #C4C4C4;
+//    }
+//    &.two {
+//        background: linear-gradient(130.23deg, #4F2500 -0.69%, #F24C4C 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+//    }
+//    &.one {
+//        background: linear-gradient(130.23deg, #9B51E0 -0.69%, #671928 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
+//    }
+//}
+//#content {
+//    padding: 20px;
+//    position: relative;
+//    z-index: 2;
+//    height: 100%; /* in place so homepage-content works */
+//
+//    h1, h2, h3, p, a, span {
+//        color: #fff;
+//        margin: 0.1em 0;
+//    }
+//}
+//
+//.page-header {
+//    display: flex;
+//    align-items: center;
+//    flex-direction: row;
+//    justify-content: space-between;
+//    padding: 10px 20px;
+//    color: #fff;
+//    a {
+//        text-decoration: none;
+//        font-weight: bold;
+//    }
+//    i {
+//        margin-right: 0.2em;
+//    }
+//
+//    h1 i {
+//        font-size: 0.8em;
+//    }
+//}
+//
+//ul.list-no-bullets {
+//    padding: 0;
+//    li {
+//        list-style: none;
+//    }
+//}
+//.post-summary {
+//    margin-bottom: 1.5em;
+//
+//    i {
+//        color: #fff;
+//        font-size: 1.2em;
+//        margin-right: 0.2em;
+//    }
+//    a {
+//        font-weight: bold;
+//        font-size: 1.2em;
+//        text-decoration: underline;
+//    }
+//    .date {
+//        margin-top: 0.2em;
+//        font-size: 0.8em;
+//        color: #E0E0E0;
+//    }
+//    p {
+//        margin-top: 0.2em;
+//    }
+//}
+//.timelapse-summaries {
+//    margin-bottom: 2em;
+//}
 
-.image-tile-two img {
-    float: left;
-    width: 50%;
-}
-.image-tile-three img:first-child {
-    float: left;
-    width: 66.66%;
-}
-.image-tile-three img:nth-child(2),
-.image-tile-three img:nth-child(3) {
-    float: right;
-    width: 33.33%;
-}
-.image-tile-fixed-height img {
-    height: 350px;
-    object-fit: cover;
-}
-.image-tile-no-space {
-    margin: 0;
+.post img {
+    max-width: 100%;
 }
 
-html, body { height: 100%; }
-body {
-    padding: 0;
-    margin: 0;
-
-
-    /* Rectangle */
-    font-family: 'Lato', sans-serif;
+.profile-photo {
+    max-width: 600px;
 }
-.background-gradient {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    transition: opacity 2s ease-in-out;
-    z-index: 1;
-
-    &.three {
-        background: linear-gradient(155.56deg, #DE0E64 -6.66%, #790505 102.89%), linear-gradient(172.82deg, #141414 50.59%, #2E3F94 103.63%), linear-gradient(162.3deg, #6EBADB 0.05%, #213496 101.26%), #C4C4C4;
-    }
-    &.two {
-        background: linear-gradient(130.23deg, #4F2500 -0.69%, #F24C4C 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
-    }
-    &.one {
-        background: linear-gradient(130.23deg, #9B51E0 -0.69%, #671928 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
-    }
+.main-nav li a {
+    background: #eee;
+    color: #222;
 }
-#content {
-    padding: 20px;
-    position: relative;
-    z-index: 2;
-    height: 100%; /* in place so homepage-content works */
-
-    h1, h2, h3, p, a, span {
-        color: #fff;
-        margin: 0.1em 0;
-    }
-}
-
-.page-header {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 20px;
+.main-nav li.active a {
+    background: #333;
     color: #fff;
+}
+.main-title {
+    background: #eee;
+    text-align: right;
+    padding: 0.5em;
+
     a {
-        text-decoration: none;
-        font-weight: bold;
-    }
-    i {
-        margin-right: 0.2em;
-    }
-
-    h1 i {
-        font-size: 0.8em;
+        max-width: 40px;
+        color: #222;
     }
 }
-
-ul.list-no-bullets {
-    padding: 0;
-    li {
-        list-style: none;
-    }
+.nav-col {
 }
-.post-summary {
-    margin-bottom: 1.5em;
-
-    i {
-        color: #fff;
-        font-size: 1.2em;
-        margin-right: 0.2em;
-    }
-    a {
-        font-weight: bold;
-        font-size: 1.2em;
-        text-decoration: underline;
-    }
-    .date {
-        margin-top: 0.2em;
-        font-size: 0.8em;
-        color: #E0E0E0;
-    }
-    p {
-        margin-top: 0.2em;
-    }
-}
-.timelapse-summaries {
-    margin-bottom: 2em;
+.container {
+    margin: 3em auto;
 }

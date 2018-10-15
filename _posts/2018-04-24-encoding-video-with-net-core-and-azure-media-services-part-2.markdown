@@ -4,16 +4,15 @@ title:  "Encoding Video with .NET Core and Azure Media Services - Part 2"
 description: "Azure Media Services offers a powerful set of video editing and delivery tools, but there is no official library for .NET Core. In this tutorial, I demonstrate how to build a basic REST client to upload and encode video with Azure"
 date:   2018-04-24 12:00:00 +0000
 canonical: "https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-and-azure-media-services-part-2-b19e6de42b60"
+ignore: true
 categories: programming
 ---
 
-# Encoding Video with .NET Core and Azure Media Services — Part 2
-
 ![1](/assets/encoding-video-with-net-core/1.png)
 
-### Part 2: Uploading Videos to Azure Storage
+## Part 2: Uploading Videos to Azure Storage
 
-Let’s continue from where we left off in [Part 1](/programming/2018/04/23/encoding-video-with-net-core-and-azure.html). We now have a MediaServices class that can communicate with Azure Media Services and establish an authentication token. Now let’s upload a video to Azure.
+Let’s continue from where we left off in [Part 1](/posts/programming/2018/04/23/encoding-video-with-net-core-and-azure.html). We now have a MediaServices class that can communicate with Azure Media Services and establish an authentication token. Now let’s upload a video to Azure.
 
 ### How files are uploaded to Azure
 
@@ -77,4 +76,4 @@ Your code [should now look like this](https://github.com/jskopek/AzureMediaServi
 
 If you are having trouble determining the state of your Azure Media Services account, you may wish to install the [Azure Media Services Explorer](https://github.com/Azure/Azure-Media-Services-Explorer). This tool provides a nice GUI for navigating your Azure Media Services instance.
 
-In the next step, we will [encode our newly uploaded video file](/programming/2018/05/08/encoding-video-with-net-core-and-azure-media-services-part-3.html).
+In the next step, we will [encode our newly uploaded video file](/posts/programming/2018/05/08/encoding-video-with-net-core-and-azure-media-services-part-3.html).
