@@ -17,7 +17,7 @@ github_username:  jskopek
 # static_url: http://localhost:8000/
 static_url: https://jms-journal.s3.amazonaws.com/
 
-permalink: /blah/:categories/:year/:month/:day/:title:output_ext
+permalink: /posts/:categories/:year/:month/:day/:title:output_ext
 
 # Build settings
 markdown: kramdown
