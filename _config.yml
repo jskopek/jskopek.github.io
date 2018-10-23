@@ -14,8 +14,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jeanmarc.skopek.ca" # the base hostname & protocol for your site
 twitter_username: jmskopek
 github_username:  jskopek
+# static_url: http://localhost:8000/
+static_url: https://jms-journal.s3.amazonaws.com/
 
-permalink: /writing/:categories/:year/:month/:day/:title:output_ext
+permalink: /blah/:categories/:year/:month/:day/:title:output_ext
 
 # Build settings
 markdown: kramdown
