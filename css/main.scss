@@ -122,12 +122,30 @@ body.light {
 .container {
     margin: 3em auto;
 }
-.gallery-tiled {
-    display: flex;
+.gallery {
     figure {
-        margin-right: 1rem;
+        margin: 0;
+    }
+    figure img {
+        margin-bottom: 1rem;
+    }
+    .gallery-tiled {
+        display: flex;
+        figure {
+            margin-right: 1rem;
+        }
+    }
+    .gallery-image {
+        text-align: center;
+
+    }
+    figcaption {
+        margin-bottom: 1rem;
+        text-align: left;
+        color: #fff;
     }
 }
+
 
 //@import './bootstrap-4.1.3/scss/bootstrap';
 //@import "./bootstrap-4.1.3/scss/forms";
