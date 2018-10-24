@@ -1,1 +1,11 @@
-![{{ include.alt }}]({{ site.static_url }}{{ include.path }}/small/{{ include.num }}.jpg )
+<!-- <img src="{{ site.static_url }}{{ include.path }}" width="{{ include.width }}" height="{{ include.height }}" alt="{{ include.alt }}"/> -->
+
+<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="{{ site.static_url }}{{ include.large_path }}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
+        <img src="{{ site.static_url }}{{ include.path }}" itemprop="thumbnail" alt="{{ include.alt }}" />
+    </a>
+    <figcaption itemprop="caption description">
+LOREM IPSUM GENERATOR
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</figcaption>
+</figure>
+

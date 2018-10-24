@@ -3,159 +3,131 @@
 ---
 @charset "utf-8";
 
-@import './bootstrap-4.1.3/scss/bootstrap';
+@import "./bootstrap-4.1.3/scss/functions";
+@import "./bootstrap-4.1.3/scss/variables";
+@import "./bootstrap-4.1.3/scss/mixins";
+@import "./bootstrap-4.1.3/scss/root";
+@import "./bootstrap-4.1.3/scss/reboot";
+@import "./bootstrap-4.1.3/scss/type";
+@import "./bootstrap-4.1.3/scss/images";
+@import "./bootstrap-4.1.3/scss/code";
+@import "./bootstrap-4.1.3/scss/grid";
+@import "./bootstrap-4.1.3/scss/tables";
+@import "./bootstrap-4.1.3/scss/utilities";
 
-//// Import partials from `sass_dir` (defaults to `_sass`)
-//@import
-//        // "syntax-highlighting"
-//        //"github-light",
-//        "normalize",
-//        "typography",
-//        "homepage-content",
-//        "video",
-//        "toggle-switch"
-//;
-//
-//.image-tile-two img {
-//    float: left;
-//    width: 50%;
-//}
-//.image-tile-three img:first-child {
-//    float: left;
-//    width: 66.66%;
-//}
-//.image-tile-three img:nth-child(2),
-//.image-tile-three img:nth-child(3) {
-//    float: right;
-//    width: 33.33%;
-//}
-//.image-tile-fixed-height img {
-//    height: 350px;
-//    object-fit: cover;
-//}
-//.image-tile-no-space {
-//    margin: 0;
-//}
-//
-//html, body { height: 100%; }
-//body {
-//    padding: 0;
-//    margin: 0;
-//
-//
-//    /* Rectangle */
-//    font-family: 'Lato', sans-serif;
-//}
-//.background-gradient {
-//    position: fixed;
-//    top: 10px;
-//    left: 10px;
-//    right: 10px;
-//    bottom: 10px;
-//    transition: opacity 2s ease-in-out;
-//    z-index: 1;
-//
-//    &.three {
-//        background: linear-gradient(155.56deg, #DE0E64 -6.66%, #790505 102.89%), linear-gradient(172.82deg, #141414 50.59%, #2E3F94 103.63%), linear-gradient(162.3deg, #6EBADB 0.05%, #213496 101.26%), #C4C4C4;
-//    }
-//    &.two {
-//        background: linear-gradient(130.23deg, #4F2500 -0.69%, #F24C4C 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
-//    }
-//    &.one {
-//        background: linear-gradient(130.23deg, #9B51E0 -0.69%, #671928 109.94%), linear-gradient(161.86deg, #141414 57.81%, #2E3F94 102.09%), linear-gradient(140.3deg, #6EBADB 5.05%, #213496 95.49%), #C4C4C4;
-//    }
-//}
-//#content {
-//    padding: 20px;
-//    position: relative;
-//    z-index: 2;
-//    height: 100%; /* in place so homepage-content works */
-//
-//    h1, h2, h3, p, a, span {
-//        color: #fff;
-//        margin: 0.1em 0;
-//    }
-//}
-//
-//.page-header {
-//    display: flex;
-//    align-items: center;
-//    flex-direction: row;
-//    justify-content: space-between;
-//    padding: 10px 20px;
-//    color: #fff;
-//    a {
-//        text-decoration: none;
-//        font-weight: bold;
-//    }
-//    i {
-//        margin-right: 0.2em;
-//    }
-//
-//    h1 i {
-//        font-size: 0.8em;
-//    }
-//}
-//
-//ul.list-no-bullets {
-//    padding: 0;
-//    li {
-//        list-style: none;
-//    }
-//}
-//.post-summary {
-//    margin-bottom: 1.5em;
-//
-//    i {
-//        color: #fff;
-//        font-size: 1.2em;
-//        margin-right: 0.2em;
-//    }
-//    a {
-//        font-weight: bold;
-//        font-size: 1.2em;
-//        text-decoration: underline;
-//    }
-//    .date {
-//        margin-top: 0.2em;
-//        font-size: 0.8em;
-//        color: #E0E0E0;
-//    }
-//    p {
-//        margin-top: 0.2em;
-//    }
-//}
-//.timelapse-summaries {
-//    margin-bottom: 2em;
-//}
+body.dark {
+    background-color: #000;
+    h1, h2, h3, h4, h5, p { color: #fff; }
+    .text-secondary { color: #aaa !important; }
+    a { color: #aaa; }
 
+    .main-nav {
+        li a {
+            color: #fff;
+            border-bottom: 2px solid #eee;
+        }
+        li a:hover {
+            border-bottom: 2px solid #444;
+        }
+        li.active a {
+            color: #888;
+            border-bottom: 2px solid #444;
+        }
+    }
+    .main-title {
+        a {
+            color: #fff;
+        }
+        a:hover {
+            border-bottom: 2px solid #eee;
+        }
+    }
+}
+body.light {
+    background-color: #fff;
+}
 .post img {
     max-width: 100%;
 }
 
-.profile-photo {
-    max-width: 600px;
+.home-photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
+    z-index: 1;
 }
-.main-nav li a {
-    background: #eee;
-    color: #222;
-}
-.main-nav li.active a {
-    background: #333;
-    color: #fff;
-}
-.main-title {
-    background: #eee;
-    text-align: right;
-    padding: 0.5em;
-
-    a {
-        max-width: 40px;
-        color: #222;
+.home-text {
+    font-size: 2.5em;
+    line-height: 1.1em;
+    margin-right: 50%;
+    margin-top: 4em;
+    
+    p {
+        margin-bottom: 1em;
     }
 }
-.nav-col {
+.main-header {
+    margin-bottom: 1em;
+}
+.main-nav {
+    z-index: 2;
+    li {
+        list-style: none;
+        float: left;
+        margin-right: 1em;
+        font-size: 1.5em;
+    }
+    li a {
+        color: #888;
+        border-bottom: 2px solid #eee;
+    }
+    li a:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #444;
+    }
+    li.active a {
+        color: #444;
+        border-bottom: 2px solid #444;
+    }
+}
+.main-title {
+    z-index: 2;
+    a {
+        color: #000;
+    }
+    a:hover {
+        text-decoration: none;
+    }
 }
 .container {
     margin: 3em auto;
 }
+
+//@import './bootstrap-4.1.3/scss/bootstrap';
+//@import "./bootstrap-4.1.3/scss/forms";
+//@import "./bootstrap-4.1.3/scss/buttons";
+//@import "./bootstrap-4.1.3/scss/transitions";
+//@import "./bootstrap-4.1.3/scss/dropdown";
+//@import "./bootstrap-4.1.3/scss/button-group";
+//@import "./bootstrap-4.1.3/scss/input-group";
+//@import "./bootstrap-4.1.3/scss/custom-forms";
+//@import "./bootstrap-4.1.3/scss/nav";
+//@import "./bootstrap-4.1.3/scss/navbar";
+//@import "./bootstrap-4.1.3/scss/card";
+//@import "./bootstrap-4.1.3/scss/breadcrumb";
+//@import "./bootstrap-4.1.3/scss/pagination";
+//@import "./bootstrap-4.1.3/scss/badge";
+//@import "./bootstrap-4.1.3/scss/jumbotron";
+//@import "./bootstrap-4.1.3/scss/alert";
+//@import "./bootstrap-4.1.3/scss/progress";
+//@import "./bootstrap-4.1.3/scss/media";
+//@import "./bootstrap-4.1.3/scss/list-group";
+//@import "./bootstrap-4.1.3/scss/close";
+//@import "./bootstrap-4.1.3/scss/modal";
+//@import "./bootstrap-4.1.3/scss/tooltip";
+//@import "./bootstrap-4.1.3/scss/popover";
+//@import "./bootstrap-4.1.3/scss/carousel";
+//@import "./bootstrap-4.1.3/scss/print";
+
+
