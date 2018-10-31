@@ -7,7 +7,24 @@ permalink: /drones/
 
 {% assign bc = site.dronepans | where: "categories", "bc" %}
 
-<h1 class="text-underline">BC</h1>
-{% for item in bc %}
-    <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-{% endfor %}
+<div class="row">
+    {% for item in bc %}
+        <div class="col col-sm-4 mb-3 timelapse-item">
+            <a href="{{ item.url }}" class="btn-video-modal" data-url-large="{{ site.static_url }}drones/large/{{ item.filename }}" data-url-medium="{{ site.static_url }}drones/medium/{{ item.filename }}" data-url-small="{{ site.static_url }}drones/small/{{ item.filename }}" data-summary="{{ item.summary }}">
+                <img src="{{ site.static_url }}drones/thumbnails/{{ item.thumbnail }}"/>
+                <div class="timelapse-summary">{{ item.title }}</div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="modal micromodal-slide" id="video-modal" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <video class="modal-video"></video>
+			<p class="summary"></p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="/assets/video-page.js"></script>

@@ -7,16 +7,16 @@ permalink: /timelapses/
 
 {% assign europe = site.timelapses | where: "categories", "europe" %}
 {% assign canada = site.timelapses | where: "categories", "canada" %}
-{% assign stanley_park = site.timelapses | where: "categories", "stanley-park" %}
+{% assign vancouver = site.timelapses | where: "categories", "vancouver" %}
+
+<h1 class="text-underline mt-5">Vancouver</h1>
+<div class="row">
+    {% for item in vancouver %}{% include timelapse.html %}{% endfor %}
+</div>
 
 <h1 class="text-underline mt-5">Canada</h1>
 <div class="row">
     {% for item in canada %}{% include timelapse.html %}{% endfor %}
-</div>
-
-<h1 class="text-underline mt-5">Stanley Park</h1>
-<div class="row">
-    {% for item in stanley_park %}{% include timelapse.html %}{% endfor %}
 </div>
 
 <h1 class="text-underline mt-5">Europe</h1>
@@ -25,22 +25,13 @@ permalink: /timelapses/
 </div>
 
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-micromodal-trigger="video-modal">
-  Launch demo modal
-</button>
-
-
-
 <div class="modal micromodal-slide" id="video-modal" aria-hidden="true">
 	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
 		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-			<div id="vimeo-container"></div>
+            <video class="modal-video"></video>
 			<p class="summary"></p>
 		</div>
 	</div>
 </div>
 
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
 <script type="text/javascript" src="/assets/video-page.js"></script>

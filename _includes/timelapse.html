@@ -1,6 +1,6 @@
-<div class="col sm-4">
-    <a href="{{ item.url }}" class="btn-video-modal" data-vimeo-player-id="{{ item.vimeoId }}" data-summary="{{ item.summary }}">
-        <img src="{{ item.thumbnail }}"/>
+<div class="col col-sm-4 mb-3 timelapse-item">
+    <a href="{{ item.url }}" class="btn-video-modal" data-url-large="{{ site.static_url }}timelapses/large/{{ item.filename }}" data-url-medium="{{ site.static_url }}timelapses/medium/{{ item.filename }}" data-url-small="{{ site.static_url }}timelapses/small/{{ item.filename }}" data-summary="{{ item.summary }}">
+        <img src="{{ site.static_url }}timelapses/thumbnails/{{ item.thumbnail }}"/>
         <div class="timelapse-summary">{{ item.title }}</div>
     </a>
 </div>
