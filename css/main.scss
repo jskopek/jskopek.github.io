@@ -177,13 +177,17 @@ body.light {
 
 
 
-.modal__container {
-    max-width: 94%;
-    padding: 0;
-    background: #000;
+.modal__overlay {
+    z-index: 2;
 
-    video {
-        max-width: 100%;
+    .modal__container {
+        max-width: 94%;
+        padding: 0;
+        background: #000;
+
+        video {
+            width: 100%;
+        }
     }
 }
 

@@ -31,14 +31,54 @@ document.querySelectorAll('.btn-video-modal').forEach((el) => {
 
 		MicroModal.show('video-modal');
 
-		let vimeoId = el.dataset.vimeoPlayerId;
-		let summary = el.dataset.summary;
-
-        let video = document.querySelector('.modal-video')
-		video.src = el.dataset.urlMedium;
-        video.play();
-		document.querySelector('.summary').innerHTML = summary;
+        window.videoLinkEl = el;
+        loadVideo(window.videoLinkEl, window.videoQuality);
 	});
+});
+
+function loadVideo(videoLinkEl, quality) {
+    /*
+    Params:
+    - videoLinkEl: element that triggered video; contains dataset values
+    - quality (optional): 'large' or 'small'; defaults to 'small'
+    */
+
+    let video = document.querySelector('.modal-video')
+
+    // remove existing source files
+    video.querySelectorAll('source').forEach((el) => { el.remove(); });
+
+    // create source files
+    var urls = (quality == 'large') ? videoLinkEl.dataset.urlLarge.split(',') : videoLinkEl.dataset.urlSmall.split(',');
+    urls.forEach((url) => {
+        let sourceEl = document.createElement('source');
+        sourceEl.src = (videoLinkEl.dataset.baseUrl || '') + url;
+        sourceEl.type = url.match('\.webm') ? 'video/webm' : 'video/mp4'
+        video.appendChild(sourceEl);
+    });
+
+    // create video poster/thumbnail
+    if(videoLinkEl.dataset.urlThumbnail) {
+        video.poster = (videoLinkEl.dataset.baseUrl || '') + videoLinkEl.dataset.urlThumbnail;
+    }
+
+    video.load();
+    video.play();
+
+    document.querySelector('.summary').innerHTML = videoLinkEl.dataset.summary;
+}
+
+document.querySelector('.btn-toggle-video-quality').addEventListener('click', (e) => {
+    e.preventDefault();
+    var quality = (window.videoQuality == 'large') ? 'small' : 'large';
+    e.target.classList.remove('small', 'large');
+    e.target.classList.add(quality);
+    e.target.innerHTML = quality;
+
+    window.videoQuality = quality;
+    if(window.videoLinkEl) {
+        loadVideo(window.videoLinkEl, quality);
+    }
 });
 
 MicroModal.init();
