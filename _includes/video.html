@@ -1,1 +1,10 @@
-<video playsinline muted="true" class="" poster="/video/{{ page.video-folder }}/thumbnails/{{ include.title }}.{{ page.video-thumbnail-extension|default:'webmhd.png' }}" src="/video/{{ page.video-folder }}/sd/{{ include.title }}.{{ page.video-sd-extension|default:'mp4.mp4' }}" data-src-sd="/video/{{ page.video-folder }}/sd/{{ include.title }}.{{ page.video-sd-extension|default:'mp4.mp4' }}" data-src-hd="/video/{{ page.video-folder }}/hd/{{ include.title }}.{{ page.video-hd-extension|default:'webmhd.webm' }} "></video>
+<video 
+    playsinline 
+    class="mt-3"
+    muted="true" 
+    poster="{{ site.static_url }}{{ page.video-folder }}thumbnails/{{ include.title }}.png"
+    data-src-sd="{{ site.static_url }}{{ page.video-folder }}sd/{{ include.title }}.mp4"
+    data-src-hd="{{ site.static_url }}{{ page.video-folder }}hd/{{ include.title }}.webm"
+>
+    <source src="{{ site.static_url }}{{ page.video-folder }}sd/{{ include.title }}.mp4">
+</video>

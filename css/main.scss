@@ -44,8 +44,16 @@ body.dark {
 body.light {
     background-color: #fff;
 }
-.post img {
-    max-width: 100%;
+.post {
+    img {
+        max-width: 100%;
+    }
+    video {
+        width: 100%;
+    }
+    h1 {
+        margin-top: 1em;
+    }
 }
 
 .home-photo {

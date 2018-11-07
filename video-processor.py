@@ -20,10 +20,10 @@ input_path = sys.argv[1]
 dry_run = True if len(sys.argv) > 2 and sys.argv[2] == '--dry-run' else False  # bit of a hack
 
 ENCODINGS = [
-    ('Apple 2160p60 4K HEVC Surround', 'large', '__filename__.mp4'),
-    ('VP9 MKV 2160p60', 'large', '__filename__.webm'),
-    #('Android 1080p30', 'large', '__filename__-h264.mp4'),
-    ('Android 480p30', 'small', '__filename__.mp4'),
+    ('Apple 2160p60 4K HEVC Surround', 'hd', '__filename__.mp4'),
+    ('VP9 MKV 2160p60', 'hd', '__filename__.webm'),
+    #('Android 1080p30', 'hd', '__filename__-h264.mp4'),
+    ('Android 480p30', 'sd', '__filename__.mp4'),
 ]
  
 # FUNCTIONS

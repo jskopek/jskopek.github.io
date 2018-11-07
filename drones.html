@@ -10,7 +10,7 @@ permalink: /drones/
 <div class="row">
     {% for item in bc %}
         <div class="col col-sm-4 mb-3 timelapse-item">
-            <a href="{{ item.url }}" class="btn-video-modal" data-url-large="{{ site.static_url }}drones/large/{{ item.filename }}" data-url-medium="{{ site.static_url }}drones/medium/{{ item.filename }}" data-url-small="{{ site.static_url }}drones/small/{{ item.filename }}" data-summary="{{ item.summary }}">
+            <a href="{{ item.url }}" class="btn-video-modal" data-url-large="{{ site.static_url }}drones/hd/{{ item.filename }}" data-url-medium="{{ site.static_url }}drones/medium/{{ item.filename }}" data-url-small="{{ site.static_url }}drones/sd/{{ item.filename }}" data-summary="{{ item.summary }}">
                 <img src="{{ site.static_url }}drones/thumbnails/{{ item.thumbnail }}"/>
                 <div class="timelapse-summary">{{ item.title }}</div>
             </a>
