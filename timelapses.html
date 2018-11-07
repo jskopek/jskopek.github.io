@@ -4,25 +4,42 @@ title: Timelapses
 body_class: dark
 permalink: /timelapses/
 ---
-
-{% assign europe = site.timelapses | where: "categories", "europe" %}
-{% assign canada = site.timelapses | where: "categories", "canada" %}
-{% assign vancouver = site.timelapses | where: "categories", "vancouver" %}
-
-<h1 class="text-underline mt-5">Vancouver</h1>
 <div class="row">
-    {% for item in vancouver %}{% include timelapse.html %}{% endfor %}
+    {% for item in site.timelapses %}
+        {% if item.featured %}
+             <div class="col col-sm-6 mb-3 timelapse-item">
+                <a href="#" class="btn-video-modal" 
+                   data-base-url="{{ site.static_url }}timelapses/"
+                   data-url-large="{{ item.src_large }}"
+                   data-url-small="{{ item.src_small }}"
+                   data-url-thumbnail="{{ item.thumbnail }}"
+                   data-summary="{{ item.summary }}">
+                    <img src="{{ site.static_url }}timelapses/{{ item.thumbnail }}"/>
+                    <div class="timelapse-summary">{{ item.title }}</div>
+                </a>
+            </div>   
+        {% endif %}
+    {% endfor %}
 </div>
 
-<h1 class="text-underline mt-5">Canada</h1>
 <div class="row">
-    {% for item in canada %}{% include timelapse.html %}{% endfor %}
+    {% for item in site.timelapses %}
+        {% unless item.featured %}
+             <div class="col col-sm-4 mb-3 timelapse-item">
+                <a href="#" class="btn-video-modal" 
+                   data-base-url="{{ site.static_url }}timelapses/"
+                   data-url-large="{{ item.src_large }}"
+                   data-url-small="{{ item.src_small }}"
+                   data-url-thumbnail="{{ item.thumbnail }}"
+                   data-summary="{{ item.summary }}">
+                    <img src="{{ site.static_url }}timelapses/{{ item.thumbnail }}"/>
+                    <div class="timelapse-summary">{{ item.title }}</div>
+                </a>
+            </div>   
+        {% endunless %}
+    {% endfor %}
 </div>
 
-<h1 class="text-underline mt-5">Europe</h1>
-<div class="row">
-    {% for item in europe %}{% include timelapse.html %}{% endfor %}
-</div>
 
 
 <div class="modal micromodal-slide" id="video-modal" aria-hidden="true">

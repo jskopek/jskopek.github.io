@@ -81,8 +81,9 @@ summary:
 def generate_thumbnail(input_path, output_path):
     # scale to 720:x
     # quality is 5 (1-30)
+    # skip first two seconds (in event of dark/black start)
     # only capture one frame
-    subprocess.run(['ffmpeg', '-i', input_path, '-filter:v', 'scale=720:-1', '-qscale:v', '5', '-vframes', '1', output_path], capture_output=True)
+    subprocess.run(['ffmpeg', '-i', input_path, '-filter:v', 'scale=720:-1', '-ss', '2', '-qscale:v', '5', '-vframes', '1', output_path], capture_output=True)
     print(f'Created thumbnail at: {output_path}')
 
 # CODE

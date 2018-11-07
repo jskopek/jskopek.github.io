@@ -53,7 +53,7 @@ function loadVideo(videoLinkEl, quality) {
     urls.forEach((url) => {
         let sourceEl = document.createElement('source');
         sourceEl.src = (videoLinkEl.dataset.baseUrl || '') + url;
-        sourceEl.type = url.match('\.webm') ? 'video/webm' : 'video/mp4'
+        sourceEl.type = generateVideoType(url, quality); 
         video.appendChild(sourceEl);
     });
 
@@ -68,6 +68,18 @@ function loadVideo(videoLinkEl, quality) {
     document.querySelector('.summary').innerHTML = videoLinkEl.dataset.summary;
 }
 
+function generateVideoType(url, quality) {
+    if(url.match('\.webm')) {
+        return 'video/webm; codecs=vp9';
+    } else if(quality == 'large') {
+        return 'video/mp4; codecs=hevc';
+    } else {
+        return 'video/mp4';
+    }
+}
+
+
+window.videoQuality = (window.innerWidth > 1920) ? 'large' : 'small'; // default to large if window > 1920, otherwise small
 document.querySelector('.btn-toggle-video-quality').addEventListener('click', (e) => {
     e.preventDefault();
     var quality = (window.videoQuality == 'large') ? 'small' : 'large';
