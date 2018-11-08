@@ -1,6 +1,7 @@
 <video 
     playsinline 
     class="mt-3"
+    {% if include.controls %}controls{% endif %}
     muted="true" 
     poster="{{ site.static_url }}{{ page.video-folder }}thumbnails/{{ include.title }}.png"
     data-src-sd="{{ site.static_url }}{{ page.video-folder }}sd/{{ include.title }}.mp4"

@@ -12,12 +12,10 @@ Installing ffmpeg on OSX with Homebrew
 """
 import sys
 import os
+import getopt
 import subprocess
 from datetime import date
 from collections import defaultdict
-
-input_path = sys.argv[1]
-dry_run = True if len(sys.argv) > 2 and sys.argv[2] == '--dry-run' else False  # bit of a hack
 
 ENCODINGS = [
     ('Apple 2160p60 4K HEVC Surround', 'hd', '__filename__.mp4'),
@@ -86,35 +84,77 @@ def generate_thumbnail(input_path, output_path):
     subprocess.run(['ffmpeg', '-i', input_path, '-filter:v', 'scale=720:-1', '-ss', '2', '-qscale:v', '5', '-vframes', '1', output_path], capture_output=True)
     print(f'Created thumbnail at: {output_path}')
 
+
 # CODE
 if __name__ == '__main__':
-    input_name = os.path.splitext(os.path.basename(input_path))[0] # just the file_name without the folder or extension
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], 'h', ['help', 'dry-run', 'auto-date', 'video-tag'])
+    except getopt.GetoptError:
+        print('video-processor.py [--dry-run] [--auto-date] [--video-tag]')
+        sys.exit(2)
 
-    handbrakeCLI = find_handbrake()
+    options = [opt for (opt, arg) in opts]
 
-    # create necessary folder names
-    folder_names = [folder_name for encoding, folder_name, file_name in ENCODINGS]
-    for folder_name in folder_names:
-        silent_make_folder(folder_name)
+    if '--help' in options or '-h' in options:
+        print('video-processor.py [--dry-run] [--auto-date] [--video-tag]')
+        sys.exit()
+    elif not len(args):
+        print('Filename or folder name must be passed')
+        sys.exit()
 
-    # encode video
-    folder_files_dict = defaultdict(list)
-    for preset, folder_name, file_name in ENCODINGS:
-        file_name = file_name.replace('__filename__', input_name)
-        output_path = os.path.join(folder_name, file_name)
-        folder_files_dict[folder_name].append(output_path)
+    dry_run = True if '--dry-run' in options else False
+    auto_date = True if '--auto-date' in options else False
+    video_tag = True if '--video-tag' in options else False
+    input_path = args[0]
 
-        print(f'Encoding file with `{preset}` preset. Output: {output_path}')
+    if os.path.isdir(input_path):
+        file_paths = [f'{input_path}/{file_name}' for file_name in os.listdir(input_path)]
+    else:
+        file_paths = [input_path]
+
+    for file_path in file_paths:
+        # make sure not folder
+        if(os.path.isdir(file_path)):
+            print(f'Skipping directory: {file_path}')
+            continue
+
+        # make sure is valid movie type
+        extension = os.path.splitext(os.path.basename(file_path))[1]
+        if extension not in ['.mov', '.mp4', '.mpeg', '.mkv', '.webm', '.avi']:
+            print(f'Skipping file, as extension {extension} is not valid')
+            continue
+
+        input_name = os.path.splitext(os.path.basename(file_path))[0] # just the file_name without the folder or extension
+
+        print(f'Processing file: {input_name}')
+
+        handbrakeCLI = find_handbrake()
+
+        # encode video
+        folder_files_dict = defaultdict(list)
+        for preset, folder_name, file_name in ENCODINGS:
+            file_name = file_name.replace('__filename__', input_name)
+            output_path = os.path.join(folder_name, file_name)
+            folder_files_dict[folder_name].append(output_path)
+
+            print(f'Encoding file with `{preset}` preset. Output: {output_path}')
+            if not dry_run:
+                silent_make_folder(folder_name)
+                print(subprocess.run([handbrakeCLI, '--preset', preset, '-i', file_path, '-o', output_path], capture_output=True))
+
+
         if not dry_run:
-            subprocess.run([handbrakeCLI, '--preset', preset, '-i', input_path, '-o', output_path], capture_output=True)
+            # thumbnail
+            silent_make_folder('thumbnails')
+            thumbnail_path = f'thumbnails/{input_name}.jpg'
+            generate_thumbnail(file_path, thumbnail_path)
 
+            # metadata
+            if video_tag:
+                print(f'{{% include video.html title="{input_name}" controls=True %}}')
+            else:
+                generate_video_metadata(input_name, folder_files_dict['large'], folder_files_dict['small'], thumbnail_path, created_at=date.today() if auto_date else None)
 
-    # thumbnail
-    silent_make_folder('thumbnails')
-    thumbnail_path = f'thumbnails/{input_name}.jpg'
-    generate_thumbnail(input_path, thumbnail_path)
-
-    # metadata
-    generate_video_metadata(input_name, folder_files_dict['large'], folder_files_dict['small'], thumbnail_path)
+        print('\n')
 
     print('Done!')
