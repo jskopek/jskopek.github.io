@@ -4,11 +4,14 @@ title:  "Costa Rica - Tortuguero"
 description: ""
 date:   2018-10-23 00:00:00 +0100
 categories: travel
+video-folder: costa-rica/tortuguero/video/
 body_class: dark
 ---
 
 
 <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    {% include controllableVideo.html title="V1-0029_Timeline 1_" %}
+
     {% include photo.html alt="11.jpg" path="costa-rica/tortuguero/small/11.jpg" medium_path="costa-rica/tortuguero/medium/11.jpg" large_path="costa-rica/tortuguero/large/11.jpg" width=1285 height=856 %}
 
     <div class="gallery-tiled">
