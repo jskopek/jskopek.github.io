@@ -20,6 +20,7 @@ from collections import defaultdict
 ENCODINGS = [
     ('Apple 2160p60 4K HEVC Surround', 'hd', '__filename__.mp4'),
     ('VP9 MKV 2160p60', 'hd', '__filename__.webm'),
+    #('VP9 MKV 1080p30', 'hd', '__filename__.webm'),
     #('Android 1080p30', 'hd', '__filename__-h264.mp4'),
     ('Android 480p30', 'sd', '__filename__.mp4'),
 ]
@@ -140,7 +141,7 @@ if __name__ == '__main__':
             print(f'Encoding file with `{preset}` preset. Output: {output_path}')
             if not dry_run:
                 silent_make_folder(folder_name)
-                print(subprocess.run([handbrakeCLI, '--preset', preset, '-i', file_path, '-o', output_path], capture_output=True))
+                subprocess.run([handbrakeCLI, '--preset', preset, '-i', file_path, '-o', output_path], capture_output=True)
 
 
         if not dry_run:
@@ -151,7 +152,7 @@ if __name__ == '__main__':
 
             # metadata
             if video_tag:
-                print(f'{{% include video.html title="{input_name}" controls=True %}}')
+                print(f'{{% include controllableVideo.html title="{input_name}" %}}')
             else:
                 generate_video_metadata(input_name, folder_files_dict['large'], folder_files_dict['small'], thumbnail_path, created_at=date.today() if auto_date else None)
 
