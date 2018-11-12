@@ -88,24 +88,36 @@ def generate_thumbnail(input_path, output_path):
 
 # CODE
 if __name__ == '__main__':
+    command_help = 'video-processor.py [--dry-run] [--auto-date] [--video-tag] [-o/--output]'
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'h', ['help', 'dry-run', 'auto-date', 'video-tag'])
+        opts, args = getopt.getopt(sys.argv[1:], 'ho:', ['help', 'dry-run', 'auto-date', 'video-tag', 'output='])
     except getopt.GetoptError:
-        print('video-processor.py [--dry-run] [--auto-date] [--video-tag]')
+        print('Error processing arguments')
+        print(command_help)
         sys.exit(2)
 
-    options = [opt for (opt, arg) in opts]
-
-    if '--help' in options or '-h' in options:
-        print('video-processor.py [--dry-run] [--auto-date] [--video-tag]')
-        sys.exit()
-    elif not len(args):
+    if not len(args):
         print('Filename or folder name must be passed')
         sys.exit()
 
-    dry_run = True if '--dry-run' in options else False
-    auto_date = True if '--auto-date' in options else False
-    video_tag = True if '--video-tag' in options else False
+    dry_run = False
+    auto_date = False
+    video_tag = False
+    output_base = ''
+
+    for opt, arg in opts:
+        if opt in ['--help', '-h']:
+            print(command_help)
+            sys.exit()
+        elif opt == '--dry-run':
+            dry_run = True
+        elif opt == '--auto-date':
+            auto_date = True
+        elif opt == '--video-tag':
+            video_tag = True
+        elif opt in ['-o', '--output']:
+            output_base = arg
+
     input_path = args[0]
 
     if os.path.isdir(input_path):
@@ -135,7 +147,7 @@ if __name__ == '__main__':
         folder_files_dict = defaultdict(list)
         for preset, folder_name, file_name in ENCODINGS:
             file_name = file_name.replace('__filename__', input_name)
-            output_path = os.path.join(folder_name, file_name)
+            output_path = os.path.join(output_base, folder_name, file_name)
             folder_files_dict[folder_name].append(output_path)
 
             print(f'Encoding file with `{preset}` preset. Output: {output_path}')
