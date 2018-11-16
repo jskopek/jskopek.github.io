@@ -21,7 +21,7 @@ permalink: /posts/:categories/:year/:month/:day/:title:output_ext
 
 # Build settings
 markdown: kramdown
-exclude: ["vendor"]
+exclude: ["vendor", "venv"]
 
 collections:
     timelapses:

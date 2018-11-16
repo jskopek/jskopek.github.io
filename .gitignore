@@ -5,3 +5,5 @@ Gemfile.lock
 node_modules
 vendor
 .DS_Store
+venv
+HandbrakeCLI.exe
