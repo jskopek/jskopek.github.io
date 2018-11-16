@@ -132,6 +132,14 @@ body.light {
 .container {
     margin: 3em auto;
 }
+.video-sequence {
+    video {
+        display: none;
+    }
+    video:first-child {
+        display: block;
+    }
+}
 .gallery {
     figure {
         margin: 0;
