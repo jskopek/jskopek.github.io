@@ -1,9 +1,11 @@
 ---
 layout: timelapses
-title: Timelapses
 body_class: dark
-permalink: /timelapses/
+title:  "Timelapses"
+permalink: /projects/timelapses/
+thumbnail: timelapses/thumbnails/june-30-city-center-combined.jpg
 ---
+
 <div class="row">
     {% for item in site.timelapses %}
         {% if item.featured %}
@@ -39,8 +41,6 @@ permalink: /timelapses/
         {% endunless %}
     {% endfor %}
 </div>
-
-
 
 <div class="modal micromodal-slide" id="video-modal" aria-hidden="true">
 	<div class="modal__overlay" tabindex="-1" data-micromodal-close>

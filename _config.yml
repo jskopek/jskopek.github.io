@@ -28,3 +28,5 @@ collections:
         output: true
     dronepans:
         output: true
+    projects:
+        output: true

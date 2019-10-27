@@ -2,7 +2,19 @@
 layout: drones
 title: Projects
 permalink: /projects/
+body_class: dark
 ---
 
-tbd...
+<div class="row">
+    {% for project in site.projects %}
+        {% if project.draft != true %}
+             <div class="col col-sm-6 mb-3 timelapse-item">
+                <a href="{{ project.url }}" class="btn-video-modal">
+                    <img src="{{ site.static_url }}{{ project.thumbnail }}"/>
+                    <div class="timelapse-summary">{{ project.title }}</div>
+                </a>
+            </div>   
+        {% endif %}
+    {% endfor %}
+</div>
 
