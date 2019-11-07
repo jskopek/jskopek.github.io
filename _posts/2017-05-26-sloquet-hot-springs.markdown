@@ -4,7 +4,7 @@ title:  "Sloquet Hot Springs"
 description: "The Sloquet Hot Springs are a natural wonder and something of an untouched gem. The long distance from Vancouver - over 5 hours - and rough roads mean that the area doesn't get much attention. This in turn means that the springs are remarkably natural. With a long weekend ahead of us, we decided to check them out."
 date:   2017-05-26 19:04:40 +0100
 categories: travel
-video-folder: posts/hot-springs-weekend/
+video-folder: posts/hot-springs-weekend
 thumbnail: posts/hot-springs-weekend/title.jpg
 ---
 

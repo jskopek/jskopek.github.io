@@ -1,1 +1,9 @@
-<video playsinline {% if include.muted %}muted="true"{% endif %} class="" poster="/video/{{ page.video-folder }}/thumbnails/{{ include.title }}.png" src="/video/{{ page.video-folder }}/sd/{{ include.title }}.mp4" data-src-sd="/video/{{ page.video-folder }}/sd/{{ include.title }}.mp4" data-src-hd="/video/{{ page.video-folder }}/hd/{{ include.title }}.webm"></video>
+<video 
+    playsinline 
+    {% if include.muted %}muted="true"{% endif %} 
+    class="" 
+    poster="/video/{{ page.video-folder }}/thumbnails/{{ include.title }}.png" 
+    src="/video/{{ page.video-folder }}/sd/{{ include.title }}.mp4" 
+    data-src-sd="/video/{{ page.video-folder }}/sd/{{ include.title }}.mp4" 
+    data-src-hd="/video/{{ page.video-folder }}/hd/{{ include.title }}.webm"
+></video>
