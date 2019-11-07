@@ -20,7 +20,7 @@ To show images side-by-side, wrap them in a div element with a .gallery-tiled cl
 
 Right now, only the large_path and path are used. Medium path may be used in the future, or it's something I might just throw out.
 
-Encoding and organization are all done by hand for now. I use ImageOptim on mac to optimize image size and an Automator action to resize images down. Medium is 50% of original, small is 25% of original.
+I've written a script to generate resized images in the correct folder structure. It's available at `scripts/photo-resizer.py`. Just give it a folder that has a number of images in it as the only argument. Encoding and organization can also be done by hand. I use ImageOptim on mac to optimize image size and an Automator action to resize images down. Medium is 50% of original, small is 25% of original.
 
 ## Video
 
