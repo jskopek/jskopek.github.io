@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Controlling LED strips with code"
+description: "The one where I learn to control an LED strip with programs. And eventually over the internet."
 categories: programming
 ---
 
@@ -22,22 +23,22 @@ You will also need an Arduino to act as the negotiator between your computer and
 
 I used the amazing [Adafruit NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide) to teach me how to connect my LED strip to my Arduino. They recommend hooking up resistors and capacitors and external power supplies to it, but being the electrical noob I am I just hooked up the LED strip directly to the +5, GRND, and digital pin (49 in my case) and everything worked. Here's what my incredibly basic wiring looked like:
 
-{% include photo.html alt="5.jpeg" path="../assets/programming-leds/small/5.jpeg" large_path="../assets/programming-leds/large/5.jpeg" width=4032 height=3024 %}
+{% include photo.html alt="5.jpeg" path="programming-leds/small/5.jpeg" large_path="programming-leds/large/5.jpeg" width=4032 height=3024 %}
 
 {% comment %}
-{% include photo.html alt="1.jpeg" path="../assets/programming-leds/small/1.jpeg" large_path="../assets/programming-leds/large/1.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="1.jpeg" path="../assets/programming-leds/small/1.jpeg" large_path="../assets/programming-leds/large/1.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="2.jpeg" path="../assets/programming-leds/small/2.jpeg" large_path="../assets/programming-leds/large/2.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="3.jpeg" path="../assets/programming-leds/small/3.jpeg" large_path="../assets/programming-leds/large/3.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="4.jpeg" path="../assets/programming-leds/small/4.jpeg" large_path="../assets/programming-leds/large/4.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="6.jpeg" path="../assets/programming-leds/small/6.jpeg" large_path="../assets/programming-leds/large/6.jpeg" width=4032 height=3024 %}
+{% include photo.html alt="1.jpeg" path="programming-leds/small/1.jpeg" large_path="programming-leds/large/1.jpeg" width=4032 height=3024 %}
+{% include photo.html alt="1.jpeg" path="programming-leds/small/1.jpeg" large_path="programming-leds/large/1.jpeg" width=4032 height=3024 %}
+{% include photo.html alt="2.jpeg" path="programming-leds/small/2.jpeg" large_path="programming-leds/large/2.jpeg" width=4032 height=3024 %}
+{% include photo.html alt="3.jpeg" path="programming-leds/small/3.jpeg" large_path="programming-leds/large/3.jpeg" width=4032 height=3024 %}
+{% include photo.html alt="4.jpeg" path="programming-leds/small/4.jpeg" large_path="programming-leds/large/4.jpeg" width=4032 height=3024 %}
+{% include photo.html alt="6.jpeg" path="programming-leds/small/6.jpeg" large_path="programming-leds/large/6.jpeg" width=4032 height=3024 %}
 {% endcomment %}
 
 ## Finding the usb port your arduino is connected to
 
 Go ahead and plug the arduino into your computer. Before we can talk to the arduino, we need to figure out where it lives. To do this, we look for the device address. This part will be a little different depending on your operating system, but for a mac you type ```ls /dev/* | grep usb```. If more than one thing shows up, you will need to unplug the arduino and run the command again and look for the difference.
 
-{% include photo.html alt="7.png" path="../assets/programming-leds/small/7.png" large_path="../assets/programming-leds/large/7.png" width=682 height=477 %}
+{% include photo.html alt="7.png" path="programming-leds/small/7.png" large_path="programming-leds/large/7.png" width=682 height=477 %}
 
 In my case, my arduino was located at ```/dev/cu.usbmodem14101```
 
@@ -64,7 +65,7 @@ To install the node-pixel firmware on your arduino, run the following interchang
 
 Note, the ```-a``` flag indicates your Arduino's type. I typed ```mega``` because I have an Arduino Mega, but if you have an Uno type ```uno``` instead.
 
-{% include photo.html alt="8.png" path="../assets/programming-leds/small/8.png" large_path="../assets/programming-leds/large/8.png" width=976 height=477 %}
+{% include photo.html alt="8.png" path="programming-leds/small/8.png" large_path="programming-leds/large/8.png" width=976 height=477 %}
 
 Now your Arduino is ready to talk to the node-pixel library!
 
