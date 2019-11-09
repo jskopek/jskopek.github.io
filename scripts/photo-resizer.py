@@ -8,23 +8,24 @@ import traceback
 
 def reorient_from_exif(image):
     try:
-        if hasattr(image, '_getexif'): # only present in JPEGs
-            for orientation in ExifTags.TAGS.keys():
-                if ExifTags.TAGS[orientation]=='Orientation':
-                    break
-            e = image._getexif()       # returns None if no EXIF data
-            if e is not None:
-                exif=dict(e.items())
-                orientation = exif[orientation]
+        if not hasattr(image, '_getexif'): # only present in JPEGs
+            return image
 
-                if orientation == 3:
-                    return image.transpose(Image.ROTATE_180)
-                elif orientation == 6:
-                    return image.transpose(Image.ROTATE_270)
-                elif orientation == 8: 
-                    return image.transpose(Image.ROTATE_90)
-                else:
-                    return image
+        for orientation in ExifTags.TAGS.keys():
+            if ExifTags.TAGS[orientation]=='Orientation':
+                break
+        e = image._getexif()       # returns None if no EXIF data
+        if e is not None:
+            exif=dict(e.items())
+            orientation = exif[orientation]
+
+            if orientation == 3:
+                return image.transpose(Image.ROTATE_180)
+            elif orientation == 6:
+                return image.transpose(Image.ROTATE_270)
+            elif orientation == 8: 
+                return image.transpose(Image.ROTATE_90)
+        return image
     except:
         return image
 
