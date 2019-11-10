@@ -2,10 +2,12 @@
 layout: post
 title:  "Controlling LED strips with code"
 description: "The one where I learn to control an LED strip with programs. And eventually over the internet."
+photo-folder: programming-leds
 categories: programming
 ---
 
 *Animation of LEDs doing things*
+{% include photo.html alt="IMG_3532.jpeg" width=4032 height=3024 %}
 
 We're going to learn how to connect a strip of LED lights to a computer and control them with your programs. This approach controls the lights with Javacript, but there are libraries for pretty much every programming language.
 
@@ -23,16 +25,7 @@ You will also need an Arduino to act as the negotiator between your computer and
 
 I used the amazing [Adafruit NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide) to teach me how to connect my LED strip to my Arduino. They recommend hooking up resistors and capacitors and external power supplies to it, but being the electrical noob I am I just hooked up the LED strip directly to the +5, GRND, and digital pin (49 in my case) and everything worked. Here's what my incredibly basic wiring looked like:
 
-{% include photo.html alt="5.jpeg" path="programming-leds/small/5.jpeg" large_path="programming-leds/large/5.jpeg" width=4032 height=3024 %}
-
-{% comment %}
-{% include photo.html alt="1.jpeg" path="programming-leds/small/1.jpeg" large_path="programming-leds/large/1.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="1.jpeg" path="programming-leds/small/1.jpeg" large_path="programming-leds/large/1.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="2.jpeg" path="programming-leds/small/2.jpeg" large_path="programming-leds/large/2.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="3.jpeg" path="programming-leds/small/3.jpeg" large_path="programming-leds/large/3.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="4.jpeg" path="programming-leds/small/4.jpeg" large_path="programming-leds/large/4.jpeg" width=4032 height=3024 %}
-{% include photo.html alt="6.jpeg" path="programming-leds/small/6.jpeg" large_path="programming-leds/large/6.jpeg" width=4032 height=3024 %}
-{% endcomment %}
+{% include photo.html alt="IMG_3533.jpeg" width=4032 height=3024 %}
 
 ## Flashing your arduino with Firmata
 
@@ -50,7 +43,7 @@ To install the node-pixel firmware on your arduino, run the following interchang
 
 Note, the ```-a``` flag indicates your Arduino's type. I typed ```mega``` because I have an Arduino Mega, but if you have an Uno type ```uno``` instead.
 
-{% include photo.html alt="8.png" path="programming-leds/small/8.png" large_path="programming-leds/large/8.png" width=976 height=477 %}
+{% include photo.html alt="Screen Shot 2019-11-09 at 12.10.56 AM.png" width=976 height=477 %}
 
 Now your Arduino is ready to talk to the node-pixel library!
 
@@ -111,7 +104,7 @@ This is just the start. To learn about what you can do with your new friend, tak
 
 ### NoWritablePortError
 
-{% include photo.html alt="9.png" path="programming-leds/small/9.png" large_path="programming-leds/large/9.png" width=4032 height=3024 %}
+{% include photo.html alt="Screen Shot 2019-11-09 at 2.25.35 AM.png" width=955 height=561 %}
 
 If you're seeing the following error: ```NoWritablePortError: Node Pixel FIRMATA controller requires IO that can write out```, it could be because of a [version issue with firmata](https://github.com/ajfisher/node-pixel/issues/148). 
 
@@ -130,7 +123,7 @@ npx interchange install git+https://github.com/ajfisher/node-pixel\#j5-firmata-u
 
 ### Timeout
 
-{% include photo.html alt="10.png" path="programming-leds/small/10.png" large_path="programming-leds/large/10.png" width=4032 height=3024 %}
+{% include photo.html alt="Screen Shot 2019-11-09 at 2.29.45 AM.png" width=955 height=561 %}
 
 I had a devil of a time with this issue:
 
@@ -140,15 +133,14 @@ In my case, I was never able to figure out exactly what went wrong. Reflashing t
 
 ### No such file or directory
 
-{% include photo.html alt="11.png" path="programming-leds/small/11.png" large_path="programming-leds/large/11.png" width=4032 height=3024 %}
-
+{% include photo.html alt="Screen Shot 2019-11-09 at 2.32.54 AM.png" width=1004 height=575 %}
 If you see ```Error: No such file or directory, cannot open /dev/cu.usbmodem14403```, check your arduino's address. It's likely incorrect.
 
 ### Finding the usb port your arduino is connected to
 
 In some cases, you may need to figure out the address of your LED strip - where it 'lives' on the computer. To do this, we look for the device address. This part will be a little different depending on your operating system, but for a mac you type ```ls /dev/* | grep usb```. If more than one thing shows up, you will need to unplug the arduino and run the command again and look for the difference.
 
-{% include photo.html alt="7.png" path="programming-leds/small/7.png" large_path="programming-leds/large/7.png" width=682 height=477 %}
+{% include photo.html alt="Screen Shot 2019-11-09 at 12.08.12 AM.png" width=682 height=477 %}
 
 In my case, my arduino was located at ```/dev/cu.usbmodem14101```
 

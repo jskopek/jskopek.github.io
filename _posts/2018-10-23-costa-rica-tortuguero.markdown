@@ -5,17 +5,18 @@ description: ""
 date:   2018-10-23 00:00:00 +0100
 categories: travel
 video-folder: costa-rica/video/
+photo-folder: costa-rica/tortuguero
 body_class: dark
 ---
 
-{% include photo.html alt="11.jpg" path="costa-rica/tortuguero/small/11.jpg"  large_path="costa-rica/tortuguero/large/11.jpg" width=1285 height=856 %}
+{% include photo.html alt="11.jpg" width=1285 height=856 %}
 Tortuguero is a pretty unique town.
 
 ## Getting There
 <div class="gallery-tiled">
-    {% include photo.html alt="2.jpg" path="costa-rica/tortuguero/small/2.jpg" large_path="costa-rica/tortuguero/large/2.jpg" width=1368 height=912 %}
-    {% include photo.html alt="3.jpg" path="costa-rica/tortuguero/small/3.jpg" large_path="costa-rica/tortuguero/large/3.jpg" width=1368 height=912 %}
-    {% include photo.html alt="4.jpg" path="costa-rica/tortuguero/small/4.jpg" large_path="costa-rica/tortuguero/large/4.jpg" width=1368 height=912 %}
+    {% include photo.html alt="2.jpg" width=1368 height=912 %}
+    {% include photo.html alt="3.jpg" width=1368 height=912 %}
+    {% include photo.html alt="4.jpg" width=1368 height=912 %}
 </div>
 <div class="video-sequence">
     {% comment %}{% include controllableVideo.html title="V1-0012_Timeline 1_" %}{% endcomment %}
@@ -40,8 +41,8 @@ The trip to Tortugero is eventful. You have to take a 4 hour boat ride to get th
 
 
 <div class="gallery-tiled">
-    {% include photo.html alt="12.jpg" path="costa-rica/tortuguero/small/12.jpg"  large_path="costa-rica/tortuguero/large/12.jpg" width=954 height=874 %}
-    {% include photo.html alt="13.jpg" path="costa-rica/tortuguero/small/13.jpg"  large_path="costa-rica/tortuguero/large/13.jpg" width=1368 height=912 %}
+    {% include photo.html alt="12.jpg" width=954 height=874 %}
+    {% include photo.html alt="13.jpg" width=1368 height=912 %}
 </div>
 
 
@@ -65,18 +66,18 @@ We learned to make chocolate the old-fashioned way
 {% include photo.html alt="15.jpg" path="costa-rica/tortuguero/small/15.jpg"  large_path="costa-rica/tortuguero/large/15.jpg" width=1368 height=912 %}
 
 <div class="gallery-tiled">
-    {% include photo.html alt="14.jpg" path="costa-rica/tortuguero/small/14.jpg"  large_path="costa-rica/tortuguero/large/14.jpg" width=1368 height=912 %}
-    {% include photo.html alt="16.jpg" path="costa-rica/tortuguero/small/16.jpg"  large_path="costa-rica/tortuguero/large/16.jpg" width=1368 height=912 %}
-    {% include photo.html alt="17.jpg" path="costa-rica/tortuguero/small/17.jpg"  large_path="costa-rica/tortuguero/large/17.jpg" width=1368 height=912 %}
+    {% include photo.html alt="14.jpg" width=1368 height=912 %}
+    {% include photo.html alt="16.jpg" width=1368 height=912 %}
+    {% include photo.html alt="17.jpg" width=1368 height=912 %}
 </div>
 
-{% include photo.html alt="26.jpg" path="costa-rica/tortuguero/small/26.jpg"  large_path="costa-rica/tortuguero/large/26.jpg" width=1368 height=912 %}
+{% include photo.html alt="26.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="27.jpg" path="costa-rica/tortuguero/small/27.jpg"  large_path="costa-rica/tortuguero/large/27.jpg" width=912 height=1368 %}
+{% include photo.html alt="27.jpg" width=912 height=1368 %}
 
-{% include photo.html alt="28.jpg" path="costa-rica/tortuguero/small/28.jpg"  large_path="costa-rica/tortuguero/large/28.jpg" width=900 height=1350 %}
+{% include photo.html alt="28.jpg" width=900 height=1350 %}
 
-{% include photo.html alt="31.jpg" path="costa-rica/tortuguero/small/31.jpg"  large_path="costa-rica/tortuguero/large/31.jpg" width=911 height=1367 %}
+{% include photo.html alt="31.jpg" width=911 height=1367 %}
 
 
 
@@ -105,17 +106,17 @@ Taking a boat ride
 </div>
 {% include photo.html alt="31.jpg" path="costa-rica/valerine/small/31.jpg" large_path="costa-rica/valerine/large/31.jpg" width=1500 height=1000 %}
 
-{% include photo.html alt="18.jpg" path="costa-rica/tortuguero/small/18.jpg"  large_path="costa-rica/tortuguero/large/18.jpg" width=1368 height=912 %}
+{% include photo.html alt="18.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="19.jpg" path="costa-rica/tortuguero/small/19.jpg"  large_path="costa-rica/tortuguero/large/19.jpg" width=1368 height=912 %}
+{% include photo.html alt="19.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="20.jpg" path="costa-rica/tortuguero/small/20.jpg"  large_path="costa-rica/tortuguero/large/20.jpg" width=1368 height=912 %}
+{% include photo.html alt="20.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="21.jpg" path="costa-rica/tortuguero/small/21.jpg"  large_path="costa-rica/tortuguero/large/21.jpg" width=1368 height=912 %}
+{% include photo.html alt="21.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="22.jpg" path="costa-rica/tortuguero/small/22.jpg"  large_path="costa-rica/tortuguero/large/22.jpg" width=1368 height=912 %}
+{% include photo.html alt="22.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="23.jpg" path="costa-rica/tortuguero/small/23.jpg"  large_path="costa-rica/tortuguero/large/23.jpg" width=1327 height=884 %}
+{% include photo.html alt="23.jpg" width=1327 height=884 %}
 
 
 
@@ -169,26 +170,26 @@ Tortugero beach shortly before sunset
 {% include photo.html alt="35.jpg" path="costa-rica/valerine/small/35.jpg" large_path="costa-rica/valerine/large/35.jpg" width=1500 height=1000 %}
 
 ## Nature Hike
-{% include photo.html alt="5.jpg" path="costa-rica/tortuguero/small/5.jpg" large_path="costa-rica/tortuguero/large/5.jpg" width=1368 height=912 %}
+{% include photo.html alt="5.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="6.jpg" path="costa-rica/tortuguero/small/6.jpg" large_path="costa-rica/tortuguero/large/6.jpg" width=1368 height=912 %}
+{% include photo.html alt="6.jpg" width=1368 height=912 %}
 
-{% include photo.html alt="7.jpg" path="costa-rica/tortuguero/small/7.jpg" large_path="costa-rica/tortuguero/large/7.jpg" width=1368 height=912 %}
+{% include photo.html alt="7.jpg" width=1368 height=912 %}
 
 <div class="gallery-tiled">
-    {% include photo.html alt="8.jpg" path="costa-rica/tortuguero/small/8.jpg" large_path="costa-rica/tortuguero/large/8.jpg" width=1368 height=912 %}
-    {% include photo.html alt="9.jpg" path="costa-rica/tortuguero/small/9.jpg" large_path="costa-rica/tortuguero/large/9.jpg" width=992 height=723 %}
+    {% include photo.html alt="8.jpg" width=1368 height=912 %}
+    {% include photo.html alt="9.jpg" width=992 height=723 %}
 </div>
 
-{% include photo.html alt="10.jpg" path="costa-rica/tortuguero/small/10.jpg"  large_path="costa-rica/tortuguero/large/10.jpg" width=1368 height=912 %}
+{% include photo.html alt="10.jpg" width=1368 height=912 %}
 
 ## Rafael 
 
-{% include photo.html alt="32.jpg" path="costa-rica/tortuguero/small/32.jpg"  large_path="costa-rica/tortuguero/large/32.jpg" width=1064 height=709 %}
+{% include photo.html alt="32.jpg" width=1064 height=709 %}
 
 <div class="gallery-tiled">
-    {% include photo.html alt="33.jpg" path="costa-rica/tortuguero/small/33.jpg"  large_path="costa-rica/tortuguero/large/33.jpg" width=1368 height=912 %}
-    {% include photo.html alt="34.jpg" path="costa-rica/tortuguero/small/34.jpg"  large_path="costa-rica/tortuguero/large/34.jpg" width=912 height=1368 %}
+    {% include photo.html alt="33.jpg" width=1368 height=912 %}
+    {% include photo.html alt="34.jpg" width=912 height=1368 %}
 </div>
 
 {% include photo-gallery.html css_selector=".gallery-image" %}

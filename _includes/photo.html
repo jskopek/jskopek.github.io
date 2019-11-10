@@ -1,9 +1,15 @@
 <!-- <img src="{{ site.static_url }}{{ include.path }}" width="{{ include.width }}" height="{{ include.height }}" alt="{{ include.alt }}"/> -->
 
 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="gallery-image">
+    {% if include.large_path and include.path %}
     <a href="{{ site.static_url }}{{ include.large_path }}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
         <img src="{{ site.static_url }}{{ include.path }}" itemprop="thumbnail" alt="{{ include.alt }}" />
     </a>
+    {% else if include.alt %}
+    <a href="{{ site.static_url }}{{ page.photo-folder}}/large/{{ include.alt }}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
+        <img src="{{ site.static_url }}{{ page.photo-folder}}/small/{{ include.alt }}" itemprop="thumbnail" alt="{{ include.alt }}" />
+    </a>
+    {% endif %}
     {% if include.caption %}
     <figcaption itemprop="caption description">{{ include.caption }}</figcaption>
     {% endif %}

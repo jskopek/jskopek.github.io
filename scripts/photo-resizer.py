@@ -57,13 +57,14 @@ for index, file_path in enumerate(filenames):
     im = Image.open(f'{path}/{file_path}')
     width, height = im.size
     im = reorient_from_exif(im)
-    file_path = f'{index + 1}.{file_extension}'
+    #file_path = f'{index + 1}.{file_extension}'
+    #file_path = f'{index + 1}.{file_extension}'
     im.save(f'{large_path}/{file_path}', file_extension, quality=80)
 
     #im.thumbnail(width, height)
     im.save(f'{small_path}/{file_path}', file_extension, quality=50)
 
-    print(f'{{% include photo.html alt="{file_path}" path="{small_path}/{file_path}" large_path="{large_path}/{file_path}" width={width} height={height} %}}')
+    print(f'{{% include photo.html alt="{file_path}" width={width} height={height} %}}')
 
 
 

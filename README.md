@@ -8,17 +8,26 @@ It's worth pointing out that all of this is *early*, and there are many janky th
 
 There is an include that helps embed photos in a blog post. An example is shown below:
 
-    {% include photo.html alt="5.jpg" path="costa-rica/arenal/small/5.jpg" medium_path="costa-rica/arenal/medium/5.jpg" large_path="costa-rica/arenal/large/5.jpg" width=1368 height=912 %}
+    {% include photo.html alt="5.jpg" width=1368 height=912 %}
 
 To show images side-by-side, wrap them in a div element with a .gallery-tiled class. This will cause them to share the width. Example:
 
 
     <div class="gallery-tiled">
-        {% include photo.html alt="5.jpg" path="costa-rica/arenal/small/5.jpg" medium_path="costa-rica/arenal/medium/5.jpg" large_path="costa-rica/arenal/large/5.jpg" width=1368 height=912 %}
-        {% include photo.html alt="4.jpg" path="costa-rica/arenal/small/4.jpg" medium_path="costa-rica/arenal/medium/4.jpg" large_path="costa-rica/arenal/large/4.jpg" width=1368 height=912 %}
+        {% include photo.html alt="5.jpg" width=1368 height=912 %}
+        {% include photo.html alt="4.jpg" width=1368 height=912 %}
     </div>
 
-Right now, only the large_path and path are used. Medium path may be used in the future, or it's something I might just throw out.
+In order for the photo includes to work, a specific structure must be used. A photo-folder must be defined at the top of the post, for example:
+
+    ---
+    ...
+    layout: post
+    photo-folder: costa-rica/arenal
+    ...
+    ---
+
+This folder is relative to the static url for the blog. The folder must have a `large` and `small` folder. These folders (and their contents) should be auto-generated when the `photo-resizer.py` command is used.
 
 I've written a script to generate resized images in the correct folder structure. It's available at `scripts/photo-resizer.py`. Just give it a folder that has a number of images in it as the only argument. Encoding and organization can also be done by hand. I use ImageOptim on mac to optimize image size and an Automator action to resize images down. Medium is 50% of original, small is 25% of original.
 
