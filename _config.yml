@@ -24,9 +24,5 @@ markdown: kramdown
 exclude: ["vendor", "venv"]
 
 collections:
-    timelapses:
-        output: true
-    dronepans:
-        output: true
     projects:
         output: true
