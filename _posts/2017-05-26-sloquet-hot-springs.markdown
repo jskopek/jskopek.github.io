@@ -12,8 +12,6 @@ The May Long weekend loomed on the horizon, and we decided we should do somethin
 
 {% include video.html title="Hot Springs Water 3" %}
 
-I think we did pretty good.
-
 The Sloquet Hot Springs are a natural wonder and something of an untouched gem. The long distance from Vancouver - over 5 hours - and rough roads mean that the area doesn't get much attention. This in turn means that the springs are remarkably natural.
 
 {% include video.html title="Driving Mountains 1" %}
@@ -94,9 +92,11 @@ There's very little sign of human meddling. The only foreign object is a small c
 
 Tea candles and lamps are scattered among the rocks, and the springs look magical when the stars come out and the candles are lit.
 
+{% comment %}
 {% include video.html title="Hot Springs Relax" %}
 
 It can get pretty busy in the evening, but we never found it hard to find space. The pools clear out during the day, which makes for some pretty relaxing times.
+{% endcomment %}
 
 {% include video.html title="Hot Springs Water 2" %}
 

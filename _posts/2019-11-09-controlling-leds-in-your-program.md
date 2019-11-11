@@ -62,7 +62,7 @@ To install node-pixel, type ```npm install node-pixel```. Simple as that!
 
 Let's try our first example node-pixel code. Create a Node file and enter the following code ([source](https://chrisruppel.com/blog/arduino-johnny-five-neopixel/)):
 
-```
+```javascript
 pixel = require("node-pixel");
 five = require("johnny-five");
 
