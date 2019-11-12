@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Controlling Arduino with Johnny"
-description: "The one where I learn to control an LED strip with programs. And eventually over the internet."
+title:  "Controlling Arduino with Johnny Five"
+description: "It's pretty easy to talk to an Arduino through a programming language. Now you can use knobs, dials, and buttons to control what your program does!"
 categories: programming
+thumbnail: posts/arduino-johnny-five.png
+thumbnail-background: "#277b45"
 ---
 
 *Animation of LEDs doing things*

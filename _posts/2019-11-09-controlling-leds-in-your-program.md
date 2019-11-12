@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Controlling LED strips with code"
-description: "The one where I learn to control an LED strip with programs. And eventually over the internet."
+description: "I learn to control strips of LEDs in Javascript"
 photo-folder: programming-leds
 thumbnail: IMG_3532.jpeg
 categories: programming

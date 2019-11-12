@@ -5,6 +5,8 @@ description: "Exploring one approach to compiling and deploying assets in Django
 date:   2014-03-05 12:00:00 +0000
 canonical: "https://medium.com/@jmskopek/exploring-django-asset-pipelines-django-assets-toolkit-dbf0a32ea2c8"
 categories: programming
+thumbnail: posts/django-assets.png
+thumbnail-background: "#277b45"
 ---
 
 In my ongoing quest to find a decent asset compilation pipeline for SASS and Coffeescript, I’ve been examining Django-Assets-Toolkit. This package checks off a lot of boxes; It offers pure pythonic approach to compiling SASS and Coffeescript, with no external binary requirements; It compiles assets on-demand, eliminating the need for a background watcher during development. It also has a number of disadvantages, which I’ll outline in a moment.

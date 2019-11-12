@@ -5,6 +5,8 @@ description: "I benchmark three ways of inserting or updating entries in a datab
 date:   2016-05-04 12:00:00 +0000
 canonical: "https://medium.com/@jmskopek/fast-insert-or-update-statements-with-django-a8b4ef1f6c06"
 categories: programming
+thumbnail: posts/fast-insert-update.png
+thumbnail-background: "#277b45"
 ---
 
 TLDR: use update_or_create / get_or_create when the likelihood of updating existing instances is high. Use create with an IntegrityError catch when the odds of inserting new instances is higher.
