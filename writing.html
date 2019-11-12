@@ -8,7 +8,7 @@ body_class: posts
 <div style="float: left; width: 45%; margin-right: 5%; margin-bottom: 3em;">
     <h1 class="mb-2">{{ category[0]|capitalize }}</h1>
     {% for post in category[1] %}
-    {% unless post.ignore %}
+    {% unless post.draft %}
         <div class="post-summary">
             {% if post.thumbnail %}
             <img src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}"/>
