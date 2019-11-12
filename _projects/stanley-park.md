@@ -1,5 +1,5 @@
 ---
-layout: drones
+layout: post
 title:  "Stanley Park"
 permalink: /projects/stanley-park/
 draft: true
