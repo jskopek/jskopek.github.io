@@ -6,6 +6,7 @@ date:   2018-10-22 00:00:00 +0100
 categories: travel
 video-folder: costa-rica/video/
 photo-folder: costa-rica/arenal
+thumbnail: 8.jpg
 body_class: dark
 ---
 

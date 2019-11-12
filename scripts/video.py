@@ -159,7 +159,7 @@ if __name__ == '__main__':
         if not dry_run:
             # thumbnail
             silent_make_folder('thumbnails')
-            thumbnail_path = f'thumbnails/{input_name}.jpg'
+            thumbnail_path = f'thumbnails/{input_name}.jpeg'
             generate_thumbnail(file_path, thumbnail_path)
 
             # metadata

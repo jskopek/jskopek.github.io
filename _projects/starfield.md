@@ -1,5 +1,5 @@
 ---
-layout: drones
+layout: post
 title:  "The Stardust Starfield"
 permalink: /projects/starfield/
 draft: true

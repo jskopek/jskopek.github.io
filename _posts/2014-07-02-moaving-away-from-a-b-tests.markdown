@@ -5,6 +5,8 @@ description: "“Intuition guides, data decides” - at times. But it’s easy t
 date:   2014-07-02 12:00:00 +0000
 canonical: "https://medium.com/@jmskopek/moving-away-from-a-b-tests-4fb66d8ee9e2"
 categories: programming
+thumbnail: posts/moving-away-ab-tests.png
+thumbnail-background: "#007bff"
 ---
 
 I’ve long been an advocate of using A/B tests to build things. That’s slowly starting to change.

@@ -3,7 +3,7 @@ layout: post
 title:  "A month in Vietnam: Ho Chi Minh"
 date:   2016-02-09 20:22:40 +0100
 description: "A month-long trip to Vietnam left me with plenty to think and write about. Embarassingly, I never managed to get beyond the first chapter of this blog series, but Ho Chi Minh is still a place I revisit in my memories"
-ignore: true
+draft: true
 categories: travel
 ---
 

@@ -1,14 +1,29 @@
 ---
-layout: post
+layout: default
 permalink: /posts/
+body_class: posts
 ---
 
 {% for category in site.categories %}
 <div style="float: left; width: 45%; margin-right: 5%; margin-bottom: 3em;">
     <h1 class="mb-2">{{ category[0]|capitalize }}</h1>
     {% for post in category[1] %}
-    {% unless post.ignore %}
-    {% include postSummary.html title=post.title date=post.date url=post.url summary=post.description %}
+    {% unless post.draft %}
+        <div class="post-summary">
+            <a href="{{ post.url }}">
+                {% if post.thumbnail %}
+                <div class="thumbnail {% if post.thumbnail-background %}thumbnail-background{% endif %}" {% if post.thumbnail-background %}style="background: {{ post.thumbnail-background }};"{% endif %}>
+                    <img src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}"/>
+                    {% if post.draft %}<span class="draft-label">Draft</span>{% endif %}
+                </div>
+                {% endif %}
+                <div class="post-head">
+                    <h5>{{ post.title }}</h5>
+                    <div class="date"><i class="fa fa-calendar-alt"></i> {{ post.date|date_to_long_string }}</div>
+                </div>
+                <p class="text-secondary">{{ post.description }}</p>
+            </a>
+        </div>
     {% endunless %}
     {% endfor %}
 </div>

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "A weekend on Vancouver Island"
+title:  "Vancouver Island"
 description: Vancouver has been suffering through an unusually wet April, and so the promise of a sunny weekend ahead meant that we had to do something special; after fielding a few ideas, we settled on Vancouver Island.
 date:   2017-05-17 20:22:40 +0100
 categories: travel
 video-folder: posts/vancouver-island
-thumbnail: posts/vancouver-island/thumbnails/V1-0001_Drone%20Pan%20Up.webmhd.mp4.png
+thumbnail: posts/vancouver-island/thumbnails/V1-0001_Drone Pan Up.jpeg
 ---
 
 {% include video.html title="V1-0024_Driving Wet" %}
@@ -60,6 +60,7 @@ It's hard to convey the size of the trees; some of the hollow ones have enough s
 
 While the trees are the main attraction, the hiking path itself is quite lovely. The pathway is very clearly marked - the area gets tons of traffic - and the contrast between the public areas and the rest of the forest is stark. You really do get the sense that you're walking through a jungle.
 
+{% comment %}
 {% include video.html title="RV" %}
 
 We decided to spend the night at a lovely AirBnB just outside of Port Alberni. Our accomodations were a trailer on the edge of a family farm, which made for a nice change. It was my first time in a trailer, so I expected rustic living; in reality, they're actually quite lovely. The interior is cozy, but there's just enough space to cook, wash, sleep, and relax. I really enjoyed how well everything was laid out; it felt like every piece of furniture had two or three alternative uses.
@@ -67,10 +68,11 @@ We decided to spend the night at a lovely AirBnB just outside of Port Alberni. O
 {% include video.html title="V1-0030_RV Cute Dog" %}
 
 The farm was home to horses, pigs, and a few very friendly dogs who were very curious to meet us. If you're ever on the island, I highly recommend spending a night on [Heather's farm](https://www.airbnb.ca/rooms/7678613).
-
-{% include video.html title="V1-0001_Drone Pan Up" %}
+{% endcomment %}
 
 # Tofino
+
+{% include video.html title="V1-0001_Drone Pan Up" %}
 
 From the minute you enter Tofino, you get the sense this little surf town has a very laid back vibe to it. Palm trees line the streets, and everyone seems to walk slowly and linger. The waterfront has a utilitarian feel to it; float planes come and go, and fishing boats mingle with whale watching tours.
 
@@ -91,12 +93,4 @@ It's easy to fill up 48 hours on the island, and before we knew it we were on ou
 {% include video.html title="V1-0026_Driving Late Night Smooth" %}
 
 All in all, we had a blast exploring the island. I highly recommend the trip if you're looking to get out of Vancouver for a weekend.
-
-Like this? Follow me on [twitter](https://twitter.com/jmskopek). I'll tweet when I film another story.
-
-<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/auto-video.js"></script>
 

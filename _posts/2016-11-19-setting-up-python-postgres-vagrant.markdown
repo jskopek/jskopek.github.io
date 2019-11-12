@@ -5,6 +5,8 @@ description: "A guide to setting up a new Vagrant virtual environment with Pytho
 date:   2016-11-19 12:00:00 +0000
 canonical: "https://medium.com/jean-marcs-thoughts/setting-up-a-python-and-postgres-development-environment-using-vagrant-97554874c834"
 categories: programming
+thumbnail: posts/vagrant.png
+thumbnail-background: "#277b45"
 ---
 
 It can always be a little annoying getting a fresh new work environment running. This guide is my attempt to keep track of how to get running as quickly as possible.

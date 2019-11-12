@@ -1,5 +1,5 @@
 ---
-layout: drones
+layout: post
 title:  "Programming for Beginners"
 permalink: /projects/programming-for-beginners/
 draft: true

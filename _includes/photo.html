@@ -1,8 +1,8 @@
 <!-- <img src="{{ site.static_url }}{{ include.path }}" width="{{ include.width }}" height="{{ include.height }}" alt="{{ include.alt }}"/> -->
 
 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="gallery-image">
-    {% if include.large_path and include.path %}
-    <a href="{{ site.static_url }}{{ include.large_path }}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
+    {% if include.path %}
+    <a href="{{ site.static_url }}{% if include.large_path %}{{ include.large_path }}{% else %}{{ include.path }}{% endif %}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
         <img src="{{ site.static_url }}{{ include.path }}" itemprop="thumbnail" alt="{{ include.alt }}" />
     </a>
     {% else if include.alt %}

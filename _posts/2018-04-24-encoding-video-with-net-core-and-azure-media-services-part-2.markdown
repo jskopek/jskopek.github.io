@@ -4,11 +4,11 @@ title:  "Encoding Video with .NET Core and Azure Media Services - Part 2"
 description: "Azure Media Services offers a powerful set of video editing and delivery tools, but there is no official library for .NET Core. In this tutorial, I demonstrate how to build a basic REST client to upload and encode video with Azure"
 date:   2018-04-24 12:00:00 +0000
 canonical: "https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-and-azure-media-services-part-2-b19e6de42b60"
-ignore: true
+draft: true
 categories: programming
 ---
 
-![1](/assets/encoding-video-with-net-core/1.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/1.png' %}
 
 ## Part 2: Uploading Videos to Azure Storage
 
@@ -72,7 +72,7 @@ Your should now have a video file uploaded and registered to an asset.
 
 Your code [should now look like this](https://github.com/jskopek/AzureMediaServicesEncoderNetCore/tree/467fed0a3f35d7b159acd51f4994ad79e0dbba1e).
 
-![4](/assets/encoding-video-with-net-core/4.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/4.png' %}
 
 If you are having trouble determining the state of your Azure Media Services account, you may wish to install the [Azure Media Services Explorer](https://github.com/Azure/Azure-Media-Services-Explorer). This tool provides a nice GUI for navigating your Azure Media Services instance.
 

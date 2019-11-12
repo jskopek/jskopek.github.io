@@ -5,14 +5,12 @@ description: "The Sloquet Hot Springs are a natural wonder and something of an u
 date:   2017-05-26 19:04:40 +0100
 categories: travel
 video-folder: posts/hot-springs-weekend
-thumbnail: posts/hot-springs-weekend/title.jpg
+thumbnail: posts/hot-springs-weekend/thumbnails/Campfire Day.jpeg
 ---
 
 The May Long weekend loomed on the horizon, and we decided we should do something special to celebrate our three days off. 
 
 {% include video.html title="Hot Springs Water 3" %}
-
-I think we did pretty good.
 
 The Sloquet Hot Springs are a natural wonder and something of an untouched gem. The long distance from Vancouver - over 5 hours - and rough roads mean that the area doesn't get much attention. This in turn means that the springs are remarkably natural.
 
@@ -94,19 +92,15 @@ There's very little sign of human meddling. The only foreign object is a small c
 
 Tea candles and lamps are scattered among the rocks, and the springs look magical when the stars come out and the candles are lit.
 
+{% comment %}
 {% include video.html title="Hot Springs Relax" %}
 
 It can get pretty busy in the evening, but we never found it hard to find space. The pools clear out during the day, which makes for some pretty relaxing times.
+{% endcomment %}
 
 {% include video.html title="Hot Springs Water 2" %}
 
 The Sloquet hot springs are pretty incredible, and well worth the 6 hour drive. It's hard to believe that something like this can happen naturally, but nature can be pretty amazing. I'd love to know how many generations have dipped their toes into the water after a long hard day.
 
 Like this? Follow me on [twitter](https://twitter.com/jmskopek). I'll tweet when I film another story.
-
-<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/auto-video.js"></script>
 

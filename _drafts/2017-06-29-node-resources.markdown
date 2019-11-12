@@ -3,6 +3,8 @@ layout: post
 title:  "Useful resources when learning Node"
 date:   2017-06-29 20:22:40 +0100
 categories: programming
+thumbnail: posts/node-js.png
+thumbnail-background: "#277b45"
 ---
 
 I recently decided to pick Node.JS as the backend for a new project I've been working on. The experience has been amazing so far; the community has evolved so much in the past three years!

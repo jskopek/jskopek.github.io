@@ -4,10 +4,11 @@ title:  "Encoding Video with .NET Core and Azure Media Services"
 description: "Azure Media Services offers a powerful set of video editing and delivery tools, but there is no official library for .NET Core. In this tutorial, I demonstrate how to build a basic REST client to upload and encode video with Azure"
 date:   2018-04-23 12:00:00 +0000
 canonical: "https://medium.com/jean-marcs-thoughts/encoding-video-with-net-core-and-azure-media-services-part-1-51bf6035ffcb"
+thumbnail: /posts/encoding-video-with-net-core/1.png
 categories: programming
 ---
 
-![1](/assets/encoding-video-with-net-core/1.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/1.png' %}
 
 ## Part 1: Authenticating with Azure Media Services
 
@@ -23,7 +24,7 @@ Let’s start by creating our new project. For this demonstration, we will creat
 
 Open Visual Studio and create a new “Console App (.NET Core)” project:
 
-![2](/assets/encoding-video-with-net-core/2.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/2.png' %}
 
 You should now have a simple project that outputs “Hello World!” to a console.
 
@@ -42,7 +43,7 @@ Once your Azure Media Services account is created, you will need to create a cli
 
  The AAD tenant domain and REST API endpoint can be found by clicking on your Azure Media Service instance from the Azure portal, then clicking on “API Access” and then “Connect to Azure Media Services API with service principal”.
 
-![3](/assets/encoding-video-with-net-core/2.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/3.png' %}
 
 You will then see your tenant domain and REST API endpoint.
 

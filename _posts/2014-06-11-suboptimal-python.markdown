@@ -5,6 +5,9 @@ description: "Some brief thoughts on how to write effecient Python code. Don’t
 date:   2014-06-11 12:00:00 +0000
 canonical: "https://medium.com/@jmskopek/suboptimal-python-d29858ddbe1f"
 categories: programming
+thumbnail: posts/suboptimal-python.png
+thumbnail-background: "#277b45"
+body_class: light
 ---
 
 Why it doesn’t always make sense to think about performance

@@ -1,5 +1,5 @@
 ---
-layout: drones
+layout: post
 title:  "Building a Computer Lab in Rural South Africa"
 date:   2018-03-03 00:00:01 +0100
 permalink: /projects/computer-lab/

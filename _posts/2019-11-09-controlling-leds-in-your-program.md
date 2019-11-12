@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Controlling LED strips with code"
-description: "The one where I learn to control an LED strip with programs. And eventually over the internet."
+description: "I learn to control strips of LEDs in Javascript"
 photo-folder: programming-leds
+thumbnail: IMG_3532.jpeg
 categories: programming
 ---
 
@@ -62,7 +63,7 @@ To install node-pixel, type ```npm install node-pixel```. Simple as that!
 
 Let's try our first example node-pixel code. Create a Node file and enter the following code ([source](https://chrisruppel.com/blog/arduino-johnny-five-neopixel/)):
 
-```
+```javascript
 pixel = require("node-pixel");
 five = require("johnny-five");
 

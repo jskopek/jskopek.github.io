@@ -29,9 +29,15 @@ def reorient_from_exif(image):
     except:
         return image
 
+# get an optional path (defaults to current folder)
 path = '.'
 if len(sys.argv) >= 2:
     path = sys.argv[1]
+
+# get an optional final extension format
+final_extension = None
+if len(sys.argv) >= 3:
+    final_extension = sys.argv[2]
 
 for expected_folder in ['large', 'small']:
     if expected_folder not in os.listdir(path):
@@ -53,18 +59,22 @@ for index, file_path in enumerate(filenames):
     file_name, file_extension = os.path.splitext(file_path)
     file_extension = file_extension.replace('.','')
 
+    # if no final_extension is specified, use the original extension
+    if not final_extension:
+        final_extension = file_extension
+
+    # settle on a standardized `jpeg`
+    if final_extension == 'jpg':
+        final_extension = 'jpeg'
     
     im = Image.open(f'{path}/{file_path}')
     width, height = im.size
     im = reorient_from_exif(im)
     #file_path = f'{index + 1}.{file_extension}'
     #file_path = f'{index + 1}.{file_extension}'
-    im.save(f'{large_path}/{file_path}', file_extension, quality=80)
+    im.save(f'{large_path}/{file_name}.{final_extension}', final_extension, quality=80)
 
     #im.thumbnail(width, height)
-    im.save(f'{small_path}/{file_path}', file_extension, quality=50)
+    im.save(f'{small_path}/{file_name}.{final_extension}', final_extension, quality=50)
 
-    print(f'{{% include photo.html alt="{file_path}" width={width} height={height} %}}')
-
-
-
+    print(f'{{% include photo.html alt="{file_name}.{final_extension}" width={width} height={height} %}}')
