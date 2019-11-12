@@ -10,12 +10,19 @@ body_class: posts
     {% for post in category[1] %}
     {% unless post.draft %}
         <div class="post-summary">
-            {% if post.thumbnail %}
-            <img src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}"/>
-            {% endif %}
-            <a href="{{ post.url }}" class="text-primary">{{ post.title }}</a>
-            <div class="date text-secondary">{{ post.date|date_to_long_string }}</div>
-            <p class="text-secondary">{{ post.summary }}</p>
+            <a href="{{ post.url }}">
+                {% if post.thumbnail %}
+                <div class="thumbnail {% if post.thumbnail-background %}thumbnail-background{% endif %}" {% if post.thumbnail-background %}style="background: {{ post.thumbnail-background }};"{% endif %}>
+                    <img src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}"/>
+                    {% if post.draft %}<span class="draft-label">Draft</span>{% endif %}
+                </div>
+                {% endif %}
+                <div class="post-head">
+                    <h5>{{ post.title }}</h5>
+                    <div class="date"><i class="fa fa-calendar-alt"></i> {{ post.date|date_to_long_string }}</div>
+                </div>
+                <p class="text-secondary">{{ post.description }}</p>
+            </a>
         </div>
     {% endunless %}
     {% endfor %}
