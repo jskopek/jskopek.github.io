@@ -25,9 +25,20 @@ $header: #4183c4;
 // overall body colors
 body {
     background-color: #000;
-    h1, h2, h3, h4, h5, p { color: #fff; }
     .text-secondary { color: #aaa !important; }
     a { color: #bbb; }
+
+    h1, h2, h3, h4, h5 { 
+        color: #fff; 
+        font-family: Russo One;
+    }
+
+    p {
+        color: #fff;
+        font-family: Rubik;
+        font-size: 18px;
+        line-height: 156.6%;
+    }
 }
 
 // light variant
@@ -193,9 +204,9 @@ body.light {
 // post
 .post {
     p {
-        max-width: 600px;
-        margin: 0em auto;
-        padding: 0;
+        // max-width: 600px;
+        // margin: 0em auto;
+        // padding: 0;
     }
     video {
         margin: 4em 0;
