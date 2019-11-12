@@ -104,12 +104,7 @@ Comme tous les bons voyages, le week-end au Lac. Saint Jean est passé trop vite
     <ol class="indicator"></ol>
 </div>
 
-<!-- <label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label> -->
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/blueimp-gallery-2.25.2/js/blueimp-gallery.min.js"></script>
-<script type="text/javascript" src="/assets/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/auto-video.js"></script>
 <link rel="stylesheet" href="/assets/blueimp-gallery-2.25.2/css/blueimp-gallery.min.css"/>
 
 <script type="text/javascript">

@@ -7,5 +7,13 @@ layout: default
         <div class="date text-secondary">{{ page.date|date_to_long_string }}</div>
     </div>
     
-    {{ content }}
+    <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        {{ content }}
+    </div>
 </div>
+
+<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/jquery.appear.js"></script>
+<script type="text/javascript" src="/assets/auto-video.js"></script>
+

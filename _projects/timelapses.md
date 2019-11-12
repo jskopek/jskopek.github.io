@@ -1,5 +1,5 @@
 ---
-layout: gallery-post
+layout: post
 body_class: dark
 title:  "Timelapses"
 permalink: /projects/timelapses/
@@ -27,9 +27,3 @@ I love taking timelapses. When I take a photo, I normally spend a short period o
 {% include video.html title="july-30-budapest-green-bridge" caption="Green Bridge" location="Budapest" %}
 {% include video.html title="june-17-paris-scenery" caption="Sacré-Cœur and Eiffel Tower" location="Paris" %}
 {% include video.html title="june-30-london-skyline" caption="London Skyline" location="London" %}
-
-<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/auto-video.js"></script>
-

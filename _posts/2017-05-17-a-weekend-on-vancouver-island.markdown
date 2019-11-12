@@ -94,9 +94,3 @@ It's easy to fill up 48 hours on the island, and before we knew it we were on ou
 
 All in all, we had a blast exploring the island. I highly recommend the trip if you're looking to get out of Vancouver for a weekend.
 
-<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/auto-video.js"></script>
-

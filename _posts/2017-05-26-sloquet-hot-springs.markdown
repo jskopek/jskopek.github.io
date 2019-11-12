@@ -104,9 +104,3 @@ The Sloquet hot springs are pretty incredible, and well worth the 6 hour drive. 
 
 Like this? Follow me on [twitter](https://twitter.com/jmskopek). I'll tweet when I film another story.
 
-<label class="switch-light switch-candy switch-candy-blue button-quality"><input type="checkbox"><span><span>SD</span><span>HD</span><a></a></span></label>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/jquery.appear.js"></script>
-<script type="text/javascript" src="/assets/auto-video.js"></script>
-
