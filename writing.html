@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: default
 permalink: /posts/
+body_class: posts
 ---
 
 {% for category in site.categories %}
@@ -8,7 +9,11 @@ permalink: /posts/
     <h1 class="mb-2">{{ category[0]|capitalize }}</h1>
     {% for post in category[1] %}
     {% unless post.ignore %}
-    {% include postSummary.html title=post.title date=post.date url=post.url summary=post.description %}
+        <div class="post-summary">
+            <a href="{{ post.url }}" class="text-primary">{{ post.title }}</a>
+            <div class="date text-secondary">{{ post.date|date_to_long_string }}</div>
+            <p class="text-secondary">{{ post.summary }}</p>
+        </div>
     {% endunless %}
     {% endfor %}
 </div>
