@@ -3,7 +3,7 @@ layout: post
 title:  "Drones"
 body_class: dark
 permalink: /projects/drones/
-thumbnail: drones/thumbnails/V1-0004_Sea To Sky River.jpg
+thumbnail: drones/thumbnails/V1-0004_Sea To Sky River.jpeg
 video-folder: drones
 ---
 

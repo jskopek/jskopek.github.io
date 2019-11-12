@@ -8,7 +8,7 @@ ignore: true
 categories: programming
 ---
 
-![1](/assets/encoding-video-with-net-core/1.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/1.png' %}
 
 ## Part 2: Uploading Videos to Azure Storage
 
@@ -72,7 +72,7 @@ Your should now have a video file uploaded and registered to an asset.
 
 Your code [should now look like this](https://github.com/jskopek/AzureMediaServicesEncoderNetCore/tree/467fed0a3f35d7b159acd51f4994ad79e0dbba1e).
 
-![4](/assets/encoding-video-with-net-core/4.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/4.png' %}
 
 If you are having trouble determining the state of your Azure Media Services account, you may wish to install the [Azure Media Services Explorer](https://github.com/Azure/Azure-Media-Services-Explorer). This tool provides a nice GUI for navigating your Azure Media Services instance.
 

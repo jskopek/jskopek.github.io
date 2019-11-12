@@ -4,12 +4,13 @@ title:  "My Front Row Seat to Pigeon Parenting"
 description: "I woke up one morning to discover that a pair of pigeons had started a family on my balcony. When life gives you lemons, take tons of pictures"
 date:   2017-11-03 12:00:00 +0000
 canonical: https://medium.com/@jmskopek/my-front-row-seat-to-pigeon-parenting-d2f4b7a7765
+thumbnail: posts/my-front-row-seat-to-pigeon-parenting/bebe.jpeg
 categories: life
 ---
 
 A couple months ago, a pair of pigeons landed on a tree I'd laid out on the balcony. They were acting a little strange, so I went outside to shoo them away. As they reluctantly flew away, I discovered they'd been sitting on two fresh new eggs. And that was the start of my two month long stint as a pigeon dad.
 
-![Bebe](/assets/my-front-row-seat-to-pigeon-parenting/bebe.jpeg)
+{% include photo.html path='posts/my-front-row-seat-to-pigeon-parenting/bebe.jpeg' caption='Bebe' %}
 
 Being a pigeon parent is a mixed blessing. They don't make for great pets - at least, not without a whole lot of training. But there's something really cool about seeing how animals raise children in the wild. So cool, in fact, that I decided to start documenting it.
 
@@ -91,13 +92,13 @@ The pigeons are really starting to develop a coat now. They're also big enough t
 
 ## Day 25
 
-![Day 25](/assets/my-front-row-seat-to-pigeon-parenting/day25.jpeg)
+{% include photo.html path='posts/my-front-row-seat-to-pigeon-parenting/day25.jpeg' caption='Day 25' %}
 
 The babies really go for it during feeding. As cool as it must be to raise kids, the feeding part doesn't seem fun.
 
 ## Day 26
 
-![Day 26](/assets/my-front-row-seat-to-pigeon-parenting/day26.jpeg)
+{% include photo.html path='posts/my-front-row-seat-to-pigeon-parenting/day26.jpeg' caption='Day 26' %}
 
 The babies are starting to look like actual pigeons now. It wont be too long before they start stretching their wings.
 
@@ -125,25 +126,25 @@ The last full day of filming. The pigeons still have a ways to go, but they're s
 
 ## Day 35
 
-![Day 35](/assets/my-front-row-seat-to-pigeon-parenting/day35.jpeg)
+{% include photo.html path='posts/my-front-row-seat-to-pigeon-parenting/day35.jpeg' caption='Day 35' %}
 
 The babies are nearly adult size by now. The parents have long given up the idea of sitting in the same tree. They tuck up a few feet away, out of sight of the babies so they can get some peace and quiet.
 
 ## Day 41
 
-![Day 41](/assets/my-front-row-seat-to-pigeon-parenting/day41.jpeg)
+{% include photo.html path='posts/my-front-row-seat-to-pigeon-parenting/day41.jpeg' caption='Day 41' %}
 
 The bi-hourly feeding cycle. Pigeon dentists must be awfully busy.
 
 ## Day 42
 
-![Day 42](/assets/my-front-row-seat-to-pigeon-parenting/day42.jpeg)
+{% include photo.html path='posts/my-front-row-seat-to-pigeon-parenting/day42.jpeg' caption='Day 42' %}
 
 Bebe cautiously checking his boundaries. As the pigeons grew bigger, they seemed to grow less afraid of my presence.
 
 ## Day 44
 
-![Day 44](/assets/my-front-row-seat-to-pigeon-parenting/day44.jpeg)
+{% include photo.html path='posts/my-front-row-seat-to-pigeon-parenting/day44.jpeg' caption='Day 44' %}
 
 The day before the first flight. Dreamliner (the one on the right) comes back once to tell us he's all right, but then he's off to live his own life. Bebe (on the left) and the parents still come back every once in a while, but the family seems to have found some other place to live their life. And that's all right with me.
 

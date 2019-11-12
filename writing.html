@@ -10,6 +10,9 @@ body_class: posts
     {% for post in category[1] %}
     {% unless post.ignore %}
         <div class="post-summary">
+            {% if post.thumbnail %}
+            <img src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}"/>
+            {% endif %}
             <a href="{{ post.url }}" class="text-primary">{{ post.title }}</a>
             <div class="date text-secondary">{{ post.date|date_to_long_string }}</div>
             <p class="text-secondary">{{ post.summary }}</p>

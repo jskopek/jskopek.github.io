@@ -8,7 +8,7 @@ ignore: true
 categories: programming
 ---
 
-![1](/assets/encoding-video-with-net-core/1.png)
+{% include photo.html path='/posts/encoding-video-with-net-core/1.png' %}
 
 ## Part 3: Running an Azure Media Services Job
 

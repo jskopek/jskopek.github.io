@@ -5,7 +5,7 @@ description: "The Sloquet Hot Springs are a natural wonder and something of an u
 date:   2017-05-26 19:04:40 +0100
 categories: travel
 video-folder: posts/hot-springs-weekend
-thumbnail: posts/hot-springs-weekend/title.jpg
+thumbnail: posts/hot-springs-weekend/thumbnails/Campfire Day.jpeg
 ---
 
 The May Long weekend loomed on the horizon, and we decided we should do something special to celebrate our three days off. 

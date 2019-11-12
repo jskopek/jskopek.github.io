@@ -236,6 +236,10 @@ body.light {
 .posts {
     .post-summary {
         margin-bottom: 1em;
+        
+        img {
+            max-width: 100%;
+        }
     }
 }
 

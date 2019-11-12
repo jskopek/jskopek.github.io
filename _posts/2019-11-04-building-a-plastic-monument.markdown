@@ -6,6 +6,7 @@ categories: life
 description: "We were invited by the Museum of Vancouver to produce a model visualizing just how much plastic is out there. This is the story of how we frantically built a plastic monument."
 video-folder: plastic-monument
 photo-folder: plastic-monument
+thumbnail: 20.jpeg
 ---
 
 Most of us are aware that the world is drowning in plastic, but it can be hard to make sense of just how much is out there. We were invited by the Museum of Vancouver to produce a model visualizing just how much plastic is out there.

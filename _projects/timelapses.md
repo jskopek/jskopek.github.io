@@ -3,7 +3,7 @@ layout: post
 body_class: dark
 title:  "Timelapses"
 permalink: /projects/timelapses/
-thumbnail: timelapses/thumbnails/june-30-city-center-combined.jpg
+thumbnail: timelapses/thumbnails/june-30-city-center-combined.jpeg
 video-folder: timelapses
 ---
 

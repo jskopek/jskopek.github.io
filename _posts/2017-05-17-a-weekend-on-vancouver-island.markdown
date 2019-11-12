@@ -5,7 +5,7 @@ description: Vancouver has been suffering through an unusually wet April, and so
 date:   2017-05-17 20:22:40 +0100
 categories: travel
 video-folder: posts/vancouver-island
-thumbnail: posts/vancouver-island/thumbnails/V1-0001_Drone%20Pan%20Up.webmhd.mp4.png
+thumbnail: posts/vancouver-island/thumbnails/V1-0001_Drone Pan Up.jpeg
 ---
 
 {% include video.html title="V1-0024_Driving Wet" %}
