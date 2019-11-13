@@ -6,18 +6,19 @@ categories: life
 description: "We were invited by the Museum of Vancouver to produce a model visualizing just how much plastic is out there. This is the story of how we frantically built a plastic monument."
 video-folder: plastic-monument
 photo-folder: plastic-monument
+featured: true
 thumbnail: 20.jpeg
 ---
 
-Most of us are aware that the world is drowning in plastic, but it can be hard to make sense of just how much is out there. We were invited by the Museum of Vancouver to produce a model visualizing just how much plastic is out there.
+Most of us are aware that the world is drowning in plastic, but it can be hard to make sense of just how much is on the planet. We were invited by the Museum of Vancouver to produce a model visualizing just how much plastic is out there.
 
 {% include photo.html alt="20.jpeg" width=4032 height=3024 %}
 
 The easiest way to visualize plastic is to compare it with something that we will have an easier time picturing, such as the combined mass of humanity. We settled on a design made up of 100 pillars, each one representing a year from the dawn of plastic in 1950 through to a prediction of the year 2050. Human mass is represented by a clear layer of resin, and plastic mass is represented with melted and recycled plastic. Future years are visualized with transparent mesh to show that we still have the ability to change our patterns.
 
-*Sketches of plastic monument will go here*
+<!-- *Sketches of plastic monument will go here* -->
 
-We sort out the model's dimensions and start hunting moulds, plastic, and resin. But first, we need to pick up an oven and some cutting tools so we can build our pillars.
+We need to sort out the model's dimensions and start hunting moulds, plastic, and resin. But first, we need to pick up an oven and some cutting tools so we can start building our pillars.
 
 ## The Hunt for an Oven Begins
 
