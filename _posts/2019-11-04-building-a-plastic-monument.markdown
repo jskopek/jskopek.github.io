@@ -20,7 +20,7 @@ The easiest way to visualize plastic is to compare it with something that we wil
 
 We need to sort out the model's dimensions and start hunting moulds, plastic, and resin. But first, we need to pick up an oven and some cutting tools so we can start building our pillars.
 
-## The Hunt for an Oven Begins
+### The Hunt for an Oven Begins
 
 <div class="gallery-tiled">
 {% include photo.html alt="2.jpeg" width=4032 height=3024 %}
@@ -37,7 +37,7 @@ It's a rough start. We hit the road again and pick up an old home oven,  only to
 
 We are now sitting in a small graveyard of useless ovens, with no way of melting plastic. Time for Plan B. We hit up craigslist and raid the city for every used toaster oven we can find. We install them in a pile under our fume hood, and voila - the oven setup is complete.
 
-## The monument takes shape
+### The monument takes shape
 
 {% include photo.html alt="9.jpeg" width=4032 height=3024 %}
 
@@ -57,7 +57,7 @@ The bricks come out equally well, and the marbeling is quite lovely. After the r
 
 {% include photo.html alt="6.jpeg" width=4032 height=3024 %}
 
-## Cutting things down
+### Cutting things down
 
 <div class="gallery-tiled">
 {% include photo.html alt="30.jpeg" width=1080 height=1920 %}
@@ -68,7 +68,7 @@ We've got our plastic, now we just need to cut it up and assemble it into pillar
 
 We pick up an old band saw; it's a beautiful thing, very heavy, and well maintained. Unfortunately, the blades are about as old as it is and our initial cuts don't go very well. We start hunting around for a replacement blade and quickly realize they don't really make them anymore. We're running out of time, so we buy a new table saw and get to work cutting the plastic down to shape.
 
-## Putting it all together
+### Putting it all together
 
 <div class="gallery-tiled">
 {% include photo.html alt="10.jpeg" width=3024 height=4032 %}
@@ -89,7 +89,7 @@ The deadline is coming up fast, so we gather a few additional friends and put ou
 
 We finish up work on the interactive part of the installation.
 
-## Showtime
+### Showtime
 
 {% include video.html title="IMG_3430" %}
 

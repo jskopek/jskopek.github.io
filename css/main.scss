@@ -311,26 +311,42 @@ body.light {
 }
 
 // mobile
-@media only screen 
-and (max-device-width : 667px) { 
-    .page-header,
-    .main-content {
-        max-width: 100%;
-    }
-    h1, h2, h3, h4, p, .site-footer {
-        padding: 0 1em;
-    }
-    video {
-        margin: 2em 0;
-    }
-    .page-header {
-        padding-top: 1em; 
-    }
-    .page-header .project-name a {
-        font-size: 0.8rem; 
+@media only screen and (max-width: 768px) {
+    .main-header {
+        margin-bottom: 2em;
+
+        .main-title a {
+            width: 150px;
+            height: 40px;
+        }
+        .main-nav {
+            padding: 0 0 0 1em;
+            li {
+                font-size: 1.2em;
+            }
+        }
     }
     .button-quality {
         display: none;
+    }
+
+    .home-text {
+        margin: 0;
+    }
+
+    // tweaking container padding on mobile to get full-width media
+    .container {
+        padding: 0;
+        .text-primary, .text-secondary, .text-gray, h1, h2, h3, h4, h5, h6, p, figure figcaption {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .gallery .gallery-tiled figure:last-child {
+            margin-right: 0rem;
+        }
+        .thumbnail img {
+            border-radius: 0;
+        }
     }
 }
 
