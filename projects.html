@@ -2,19 +2,23 @@
 layout: default
 title: Projects
 permalink: /projects/
-body_class: dark
+body_class: posts
 ---
-
 <div class="row">
-    {% for project in site.projects %}
-        {% if project.draft != true %}
-             <div class="col col-sm-6 mb-3 timelapse-item">
-                <a href="{{ project.url }}" class="btn-video-modal">
-                    <img src="{{ site.static_url }}{{ project.thumbnail }}"/>
-                    <div class="timelapse-summary">{{ project.title }}</div>
-                </a>
-            </div>   
-        {% endif %}
+    {% for post in site.projects %}
+    {% unless post.draft %}
+    <div class="col">
+        <a href="{{ post.url }}" class="d-block">
+            {% if post.thumbnail %}
+            <div class="thumbnail thumbnail-large mb-2">
+                <img src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}" />
+            </div>
+            {% endif %}
+
+            <h5>{{ post.title }}</h5>
+            <p class="text-secondary">{{ post.description }}</p>
+        </a>
+    </div>
+    {% endunless %}
     {% endfor %}
 </div>
-

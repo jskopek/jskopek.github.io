@@ -1,6 +1,4 @@
-<!-- <img src="{{ site.static_url }}{{ include.path }}" width="{{ include.width }}" height="{{ include.height }}" alt="{{ include.alt }}"/> -->
-
-<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="gallery-image">
+<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="gallery-image mb-4">
     {% if include.path %}
     <a href="{{ site.static_url }}{% if include.large_path %}{{ include.large_path }}{% else %}{{ include.path }}{% endif %}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
         <img src="{{ site.static_url }}{{ include.path }}" itemprop="thumbnail" alt="{{ include.alt }}" />
@@ -10,8 +8,11 @@
         <img src="{{ site.static_url }}{{ page.photo-folder}}/small/{{ include.alt }}" itemprop="thumbnail" alt="{{ include.alt }}" />
     </a>
     {% endif %}
-    {% if include.caption %}
-    <figcaption itemprop="caption description">{{ include.caption }}</figcaption>
+    {% if include.caption or include.location %}
+    <div class="d-flex">
+        {% if include.caption %}<figcaption itemprop="description">{{ include.caption }}</figcaption>{% endif %}
+        {% if include.location %}<figcaption itemprop="contentLocation" class="ml-auto"><i class="fa fa-location"></i> {{ include.location }}</figcaption>{% endif %}
+    </div>
     {% endif %}
 </figure>
 

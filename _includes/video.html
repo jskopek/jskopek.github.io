@@ -1,4 +1,4 @@
-<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject">
+<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject" class="mb-4">
     <video 
         playsinline 
         class="mt-3"
@@ -10,10 +10,10 @@
     >
         <source src="{{ site.static_url }}{{ page.video-folder }}/sd/{{ include.title }}.mp4">
     </video>
-    {% if include.caption %}
-    <figcaption itemprop="description">{{ include.caption }}</figcaption>
-    {% endif %}
-    {% if include.location %}
-    <figcaption itemprop="contentLocation">{{ include.location }}</figcaption>
+    {% if include.caption or include.location %}
+    <div class="d-flex">
+        {% if include.caption %}<figcaption itemprop="description">{{ include.caption }}</figcaption>{% endif %}
+        {% if include.location %}<figcaption itemprop="contentLocation" class="ml-auto"><i class="fa fa-location"></i> {{ include.location }}</figcaption>{% endif %}
+    </div>
     {% endif %}
 </figure>
