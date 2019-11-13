@@ -4,6 +4,7 @@ title:  "Drones"
 body_class: dark
 permalink: /projects/drones/
 thumbnail: drones/thumbnails/V1-0004_Sea To Sky River.jpeg
+description: "Drones fascinate me because they allow me to see the world from a different perspective. It’s always been a dream of mine to be able to fly, and drones give me that ability."
 video-folder: drones
 ---
 
