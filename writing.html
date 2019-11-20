@@ -37,14 +37,13 @@ body_class: posts
     <a href="{{ post.url }}" class="d-block mb-4">
         <div class="row">
             <div class="col-12 col-md-3 mb-2">
-                {% if post.thumbnail %}
-                <div class="thumbnail {% if post.thumbnail-background %}thumbnail-background{% endif %}"
-                    {% if post.thumbnail-background %}style="background: {{ post.thumbnail-background }};" {% endif %}>
-                    <img
-                        src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}" />
-                    {% if post.draft %}<span class="draft-label">Draft</span>{% endif %}
+                <div 
+                    class="thumbnail {% if post.thumbnail-background %}thumbnail-background{% endif %} {% unless post.thumbnail %}thumbnail-blank{% endunless %}"
+                    {% if post.thumbnail-background %}style="background: {{ post.thumbnail-background }};" {% endif %}
+                >
+                    {% if post.thumbnail %}<img src="{{ site.static_url }}{% if post.photo-folder %}{{ post.photo-folder }}/small/{% endif %}{{ post.thumbnail }}" />{% endif %}
+                    {% if post.draft %}<span class="draft-label text-secondary">Draft</span>{% endif %}
                 </div>
-                {% endif %}
             </div>
             <div class="col">
                 <h5>{{ post.title }}</h5>

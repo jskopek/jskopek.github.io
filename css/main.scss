@@ -287,6 +287,7 @@ body.light {
 
     .thumbnail {
         border-radius: 4px;
+        position: relative;
 
         img {
             border-radius: 4px;
@@ -306,6 +307,24 @@ body.light {
                 max-height: 150px;
                 width: auto;
             }
+        }
+        &.thumbnail-blank {
+            height: 130px;
+            background: url(/assets/thumbnail-blank.png) #fff4f4;
+            background-size: 24%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .draft-label {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 4em;
+            background: rgba(255,255,255,0.8);
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.8em;
         }
     }
 }
