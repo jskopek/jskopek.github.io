@@ -1,7 +1,7 @@
 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="gallery-image mb-4">
     {% if include.path %}
     <a href="{{ site.static_url }}{% if include.large_path %}{{ include.large_path }}{% else %}{{ include.path }}{% endif %}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">
-        <img src="{{ site.static_url }}{{ include.path }}" itemprop="thumbnail" alt="{{ include.alt }}" />
+        <img src="{{ site.static_url }}{% if page.photo-folder %}{{ page.photo-folder}}/{% endif %}{{ include.path }}" itemprop="thumbnail" alt="{{ include.alt }}" />
     </a>
     {% else if include.alt %}
     <a href="{{ site.static_url }}{{ page.photo-folder}}/large/{{ include.alt }}" itemprop="contentUrl" data-size="{{ include.width }}x{{ include.height }}">

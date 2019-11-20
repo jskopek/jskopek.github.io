@@ -12,7 +12,7 @@ body_class: dark
 
 <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-    {% include photo.html alt="14.jpg" caption="The Arenal volcano fully revealed. The volcano is still very active, although scientists believe the next erruption will not happen for another 340 years. The last erruption wiped out two towns and killed hundreds of people." path="costa-rica/arenal/small/14.jpg" large_path="costa-rica/arenal/large/14.jpg" width=1368 height=912 %}
+    {% include photo.html alt="14.jpg" caption="The Arenal volcano fully revealed. The volcano is still very active, although scientists believe the next erruption will not happen for another 340 years. The last erruption wiped out two towns and killed hundreds of people." width=1368 height=912 %}
 
     <div class="gallery-tiled">
         {% include photo.html alt="5.jpg" width=1368 height=912 %}
@@ -21,9 +21,9 @@ body_class: dark
 
     <figcaption>We joined a guided tour around the base of the Arenal volcano. The whole area was razed when the volcano errupted 60 years ago, but since then the jungle has been reborn in the rich soil. We stopped at a tree that had vines straight out of Tarzan.</figcaption>
 
-    {% include photo.html alt="6.jpg" caption="A wild tarantula. They are way cuter in person, and not nearly as deadly as Hollywood makes them out to be" path="costa-rica/arenal/small/6.jpg" large_path="costa-rica/arenal/large/6.jpg" width=1368 height=912 %}
+    {% include photo.html alt="6.jpg" caption="A wild tarantula. They are way cuter in person, and not nearly as deadly as Hollywood makes them out to be" width=1368 height=912 %}
 
-    {% include photo.html alt="8.jpg" path="costa-rica/arenal/small/8.jpg" large_path="costa-rica/arenal/large/8.jpg" width=912 height=1368 %}
+    {% include photo.html alt="8.jpg" width=912 height=1368 %}
 
     <div class="gallery-tiled">
         {% include photo.html alt="7.jpg" width=1368 height=912 %}
