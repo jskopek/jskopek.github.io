@@ -5,6 +5,11 @@
 
 @import "./bootstrap-4.1.3/scss/functions";
 @import "./bootstrap-4.1.3/scss/variables";
+//$theme-colors: (
+//  "primary": #ff0000,
+//  "danger": #ff4136
+//);
+
 @import "./bootstrap-4.1.3/scss/mixins";
 @import "./bootstrap-4.1.3/scss/root";
 @import "./bootstrap-4.1.3/scss/reboot";
@@ -21,46 +26,40 @@ $taupe: #483C32;
 $carbon-ark: rgb(255, 250, 244);  // Color of Carbon Ark (http://planetpixelemporium.com/tutorialpages/light.html)
 $high-noon-sun: rgb(255, 255, 251);  // Color of High Noon Sun (http://planetpixelemporium.com/tutorialpages/light.html)
 $header: #4183c4;
+:root {
+    color-scheme: light dark;
+}
 
-// overall body colors
+// overall color & typography
 body {
-    background-color: #000;
-    .text-secondary { color: #aaa; }
-    a { color: #bbb; }
-
-    h1, h2, h3, h4, h5 { 
-        color: #fff; 
-        // font-family: Russo One;
-        font-family: Rubik;
-    }
-
-    p {
-        color: #fff;
-        font-family: Rubik;
-        font-size: 18px;
-        line-height: 156.6%;
-    }
-}
-
-// light variant
-body.light {
     background-color: #fbfbfb;
-    h1, h2, h3, h4, h5, p { color: #000; }
-    .text-secondary { color: #444; }
-    li a {
-        color: #444;
-        border-bottom: 2px solid #444;
-    }
-    li a:hover,
-    li.active a {
-        color: #888;
-        border-bottom: 2px solid #eee;
-    }
-    .main-title a {
-        color: #000;
-        background-image: url(/assets/home-logo-white.png);
-    }
 }
+a { 
+    color: #bbb; 
+    &:hover {
+        .text-secondary {
+            color: #000 !important;
+        } 
+        .text-gray { 
+            color: #888 !important;
+        }
+    }
+
+}
+h1, h2, h3, h4, h5, p { 
+    color: #000; 
+    font-family: Rubik; //Russo One
+}
+p {
+    font-family: Rubik;
+    font-size: 18px;
+    line-height: 156.6%;
+}
+.hr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+
 
 /* header */
 .main-header {
@@ -76,22 +75,26 @@ body.light {
     }
     li a {
         transition: border-bottom .3s, color .4s;
-        color: #fff;
-        border-bottom: 2px solid #eee;
-    }
-    li a:hover,
-    li.active a {
         text-decoration: none;
-        color: #888;
-        border-bottom: 2px solid #444;
+
+        color: #aaa;
+        border-bottom: 2px solid #aaa;
+
+        &:hover,
+        &.active {
+            color: #222;
+            border-bottom: 2px solid #222;
+        }
     }
+
+
 }
 .main-title {
     z-index: 2;
     a {
         color: #fff;
         display: block;
-        background-image: url(/assets/home-logo.png);
+        background-image: url(/assets/home-logo-white.png);
         background-repeat: no-repeat;
         text-indent: -5000px;
         background-size: cover;
@@ -251,10 +254,6 @@ body.light {
 
 // list of all posts
 .posts {
-    .featured-posts {
-        border-bottom: 1px solid #f0f0f0;
-
-    }
     a:hover {
         text-decoration: none;
     }
@@ -263,14 +262,6 @@ body.light {
     a {
         .text-secondary, .text-gray { 
             transition: color .3s; 
-        }
-        &:hover {
-            .text-secondary {
-                color: #000 !important;
-            } 
-            .text-gray { 
-                color: #888 !important;
-            }
         }
     }
 
@@ -368,6 +359,52 @@ body.light {
         }
     }
 }
+
+// dark mode
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #090d1e;
+    }
+    .text-secondary { color: #aaa; }
+    h1, h2, h3, h4, h5 { 
+        color: #fff; 
+    }
+
+    p {
+        color: #fff;
+    }
+    a {
+        &:hover {
+            .text-secondary {
+                color: #fff !important;
+            } 
+            .text-gray { 
+                color: #ccc !important;
+            }
+        }
+    }
+
+
+    .main-title a {
+        background-image: url(/assets/home-logo.png);
+    }
+    .hr {
+        border-bottom: 1px solid #0b1540;
+    }
+
+    .main-nav li a {
+        color: #aaa;
+        border-bottom: 2px solid #aaa;
+
+        &:hover,
+        &.active {
+            color: #eee;
+            border-bottom: 2px solid #eee;
+        }
+    }
+
+}
+
 
 
 //@import './bootstrap-4.1.3/scss/bootstrap';
